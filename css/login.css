@@ -1,0 +1,37 @@
+.container {
+  width: 100%;
+  margin: 0; }
+
+.wrap {
+  width: 992px;
+  margin: 0 auto; }
+
+.formwrap {
+  width: 100%;
+  height: 480px;
+  background: url(../images/lunbo/move1.jpeg);
+  background-position: -720px;
+  overflow: hidden; }
+  .formwrap .pos {
+    width: 992px;
+    height: 390px;
+    margin: 22px auto;
+    position: relative; }
+    .formwrap .pos form {
+      background: #fff;
+      height: 390px;
+      width: 350px;
+      position: absolute;
+      right: 0; }
+      .formwrap .pos form .title {
+        width: 100%;
+        height: 54px;
+        border-bottom: 1px solid #ddd; }
+        .formwrap .pos form .title a {
+          display: block;
+          float: left;
+          width: 80px;
+          margin-left: 69px;
+          height: 54px;
+          line-height: 54px;
+          color: #999; }

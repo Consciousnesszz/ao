@@ -1,36 +1,362 @@
-/*
-Error: Invalid GBK character "\xE5"
-        on line 2 of E:\project\ao\sass\index.sass
+/*---------------var------------------*/
+/*-------------header---------------*/
+#header-wrap {
+  width: 100%;
+  height: 197px;
+  background: #fff; }
+  #header-wrap:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ff432e; }
 
-1: /*---------------var------------------*\/
-2: $pcFont: "微软雅黑";
-3: $defaultColor: #333;
-4: $bodyWidth: 1200px;
-5: /*---------------reset------------------*\/
-6: 
-7: body, dl, dd, h1, h2, h3, h4, h5, h6, p, form, figure, figcaption {
+#header-wrap .headerg {
+  width: 100%;
+  height: 35px;
+  background: #f5f5f5;
+  font-size: 10px; }
+  #header-wrap .headerg .box {
+    width: 1200px;
+    margin: 0 auto; }
+    #header-wrap .headerg .box .left {
+      width: 405px;
+      height: 100%;
+      float: left;
+      line-height: 35px; }
+      #header-wrap .headerg .box .left .orange {
+        color: #ff432e;
+        margin-left: 12px; }
+      #header-wrap .headerg .box .left #addr {
+        float: right; }
+        #header-wrap .headerg .box .left #addr div {
+          margin: 4px;
+          border-radius: 4px;
+          height: 25px;
+          float: right;
+          background: #fff;
+          line-height: 25px;
+          padding: 0 10px;
+          border: 1px solid #ddd; }
+          #header-wrap .headerg .box .left #addr div span {
+            padding: 0 5px; }
+        #header-wrap .headerg .box .left #addr i {
+          display: block;
+          float: right; }
+    #header-wrap .headerg .box .right {
+      width: 355px;
+      height: 100%;
+      float: right;
+      line-height: 35px; }
+      #header-wrap .headerg .box .right ul li {
+        padding: 0 10px;
+        float: left;
+        position: relative;
+        overflow: hidden; }
+        #header-wrap .headerg .box .right ul li:after {
+          content: "";
+          display: block;
+          width: 1px;
+          height: 10px;
+          background: #aaa;
+          position: absolute;
+          left: 0;
+          top: 13px; }
+        #header-wrap .headerg .box .right ul li:first-of-type:after {
+          display: none; }
+        #header-wrap .headerg .box .right ul li span {
+          display: inline-block;
+          width: 18px;
+          height: 35px; }
+          #header-wrap .headerg .box .right ul li span .red {
+            margin: 0 auto;
+            display: inline-block;
+            width: 8px;
+            height: 16px;
+            background: url(../images/spirit/icon.png);
+            background-position: -4px -48px; }
+          #header-wrap .headerg .box .right ul li span .red2 {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: url(../images/spirit/icon.png);
+            background-position: -2px -66px; }
+        #header-wrap .headerg .box .right ul li .orange {
+          display: inline;
+          padding: 0 3px;
+          color: #ff432e; }
 
-Backtrace:
-E:\project\ao\sass\index.sass:2
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1323:in `rescue in block in find_encoding_error'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1320:in `block in find_encoding_error'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `each'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `each_with_index'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `find_encoding_error'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:896:in `check_sass_encoding'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:423:in `check_encoding!'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:379:in `_to_tree'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
-D:/Program Files (x86)/Koala/bin/sass:18:in `load'
-D:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid GBK character \"\xE5\"\A         on line 2 of E:\project\ao\sass\index.sass\A \A 1: /*---------------var------------------*/\A 2: $pcFont: \"微软雅黑\";\A 3: $defaultColor: #333;\A 4: $bodyWidth: 1200px;\A 5: /*---------------reset------------------*/\A 6: \A 7: body, dl, dd, h1, h2, h3, h4, h5, h6, p, form, figure, figcaption {"; }
+#header-wrap .header {
+  width: 1200px;
+  margin: 0 auto; }
+
+#header-wrap .header:nth-of-type(2) {
+  height: 120px; }
+  #header-wrap .header:nth-of-type(2) #logo {
+    width: 362px;
+    height: 100%;
+    float: left; }
+    #header-wrap .header:nth-of-type(2) #logo a {
+      display: block;
+      float: left;
+      margin: 5px 0; }
+  #header-wrap .header:nth-of-type(2) .search {
+    width: 400px;
+    height: 100%;
+    padding: 0 90px;
+    float: left; }
+    #header-wrap .header:nth-of-type(2) .search .top {
+      width: 400px;
+      height: 35px;
+      margin-top: 45px; }
+      #header-wrap .header:nth-of-type(2) .search .top #search {
+        width: 327px;
+        height: 30px;
+        border: 2px solid #ff432e;
+        float: left; }
+      #header-wrap .header:nth-of-type(2) .search .top #btn {
+        display: block;
+        width: 70px;
+        height: 30px;
+        float: left;
+        background: #ff432e; }
+        #header-wrap .header:nth-of-type(2) .search .top #btn i {
+          color: white;
+          line-height: 34px;
+          text-align: center; }
+    #header-wrap .header:nth-of-type(2) .search .bottom a {
+      margin-right: 10px;
+      color: #ccc; }
+    #header-wrap .header:nth-of-type(2) .search .bottom a:nth-of-type(1) {
+      color: #ff432e; }
+  #header-wrap .header:nth-of-type(2) .confirm {
+    width: 255px;
+    height: 75px;
+    float: left;
+    padding-top: 45px; }
+    #header-wrap .header:nth-of-type(2) .confirm a {
+      display: block;
+      width: 64px;
+      height: 33px;
+      float: left;
+      margin-right: 31px;
+      background: url(../images/spirit/icon.png);
+      background-position: -91px -180px; }
+    #header-wrap .header:nth-of-type(2) .confirm a:nth-of-type(2) {
+      background-position: -91px -213px; }
+    #header-wrap .header:nth-of-type(2) .confirm a:last-of-type {
+      background-position: -91px -246px;
+      margin: 0; }
+
+#header-wrap .header:nth-of-type(3) {
+  height: 40px; }
+  #header-wrap .header:nth-of-type(3) .left {
+    width: 220px;
+    height: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+    float: left;
+    color: #000; }
+  #header-wrap .header:nth-of-type(3) #nav {
+    width: 585px;
+    height: 100%;
+    float: left; }
+    #header-wrap .header:nth-of-type(3) #nav ul li {
+      float: left;
+      width: 90px;
+      padding: 0 5px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 16px; }
+      #header-wrap .header:nth-of-type(3) #nav ul li a {
+        color: #aaa; }
+      #header-wrap .header:nth-of-type(3) #nav ul li:hover a {
+        color: #ff432e; }
+    #header-wrap .header:nth-of-type(3) #nav ul li:nth-of-type(1) {
+      width: 56px; }
+      #header-wrap .header:nth-of-type(3) #nav ul li:nth-of-type(1) a {
+        color: #ff432e; }
+  #header-wrap .header:nth-of-type(3) #special {
+    width: 312px;
+    float: right;
+    height: 40px; }
+    #header-wrap .header:nth-of-type(3) #special ul li {
+      float: left;
+      line-height: 40px;
+      text-align: center;
+      padding: 0 13px; }
+      #header-wrap .header:nth-of-type(3) #special ul li a {
+        font-size: #aaa; }
+      #header-wrap .header:nth-of-type(3) #special ul li:hover a {
+        color: #ff432e; }
+
+/*-------------banner---------------*/
+#banner {
+  width: 100%;
+  height: 465px;
+  position: relative; }
+  #banner ul {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    #banner ul li {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: -360px; }
+      #banner ul li img {
+        height: 100%; }
+  #banner #subnav {
+    width: 220px;
+    height: 100%;
+    background: #f5f5f5;
+    position: absolute;
+    z-index: 7;
+    top: 0;
+    left: 30px; }
+    #banner #subnav ul {
+      width: 220px;
+      height: 77px; }
+      #banner #subnav ul:hover {
+        background: #fff; }
+        #banner #subnav ul:hover li p a {
+          color: #ff337e; }
+        #banner #subnav ul:hover li span a {
+          color: #ff337e; }
+      #banner #subnav ul li {
+        width: 175px;
+        height: 75px;
+        margin: 0 auto;
+        position: relative;
+        left: 0;
+        border-bottom: 1px dashed #000 !important; }
+        #banner #subnav ul li p {
+          width: 100%;
+          height: 40px;
+          line-height: 40px; }
+          #banner #subnav ul li p a {
+            color: #000; }
+            #banner #subnav ul li p a:hover {
+              font-weight: bold; }
+            #banner #subnav ul li p a i {
+              display: inline-block;
+              width: 22px;
+              height: 18px;
+              background: url(../images/spirit/icon.png);
+              background-position: -40px -65px;
+              margin: 0 5px; }
+        #banner #subnav ul li span a {
+          font-size: 11px;
+          color: #a0a0a0; }
+          #banner #subnav ul li span a:hover {
+            font-weight: bold; }
+      #banner #subnav ul li:last-of-type {
+        border: 0; }
+    #banner #subnav ul:nth-of-type(2) li p a i {
+      background-position: -40px -96px; }
+    #banner #subnav ul:nth-of-type(3) li p a i {
+      background-position: -40px -126px; }
+    #banner #subnav ul:nth-of-type(4) li p a i {
+      background-position: -40px -156px; }
+    #banner #subnav ul:nth-of-type(5) li p a i {
+      background-position: -40px -186px; }
+    #banner #subnav ul:nth-of-type(6) li p a i {
+      background-position: -40px -216px; }
+
+/*-------------footer---------------*/
+#footer {
+  width: 100%;
+  height: 318px;
+  padding-top: 50px;
+  background: #d3d3d3; }
+  #footer .top {
+    width: 100%;
+    height: 106px;
+    background: #3e3a39; }
+    #footer .top .ad {
+      width: 1200px;
+      height: 100%;
+      margin: 0 auto; }
+      #footer .top .ad ul {
+        height: 94px;
+        padding-top: 12px; }
+        #footer .top .ad ul li {
+          float: left;
+          width: 56px;
+          height: 94px;
+          padding: 0 72px; }
+          #footer .top .ad ul li i {
+            background: url(../images/footer/1.png);
+            display: block;
+            width: 56px;
+            height: 54px; }
+          #footer .top .ad ul li p {
+            text-align: center;
+            color: white;
+            margin-top: 11px; }
+        #footer .top .ad ul li:nth-of-type(1) i {
+          background-position: -3px -3px; }
+        #footer .top .ad ul li:nth-of-type(2) i {
+          background-position: -3px -63px; }
+        #footer .top .ad ul li:nth-of-type(3) i {
+          background-position: -3px -123px; }
+        #footer .top .ad ul li:nth-of-type(4) {
+          width: 60px;
+          padding: 0 67px; }
+          #footer .top .ad ul li:nth-of-type(4) i {
+            background-position: -3px -183px; }
+        #footer .top .ad ul li:nth-of-type(5) i {
+          background-position: -3px -243px; }
+        #footer .top .ad ul li:nth-of-type(6) i {
+          background-position: -3px -303px; }
+  #footer .center {
+    width: 100%;
+    height: 172px; }
+    #footer .center .lead {
+      width: 1200px;
+      padding-top: 32px;
+      margin: 0 auto; }
+      #footer .center .lead .left {
+        width: 240px;
+        float: left; }
+        #footer .center .lead .left #us span {
+          display: inline-block;
+          margin-top: 18px; }
+      #footer .center .lead .centernav {
+        width: 810px;
+        float: left; }
+        #footer .center .lead .centernav dl {
+          width: 160px;
+          height: 100%;
+          float: left; }
+          #footer .center .lead .centernav dl dt {
+            width: 100%;
+            height: 18px;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #000; }
+          #footer .center .lead .centernav dl dd {
+            line-height: 22px; }
+            #footer .center .lead .centernav dl dd a {
+              color: #666; }
+      #footer .center .lead .right {
+        float: left;
+        height: 100%;
+        width: 130px; }
+        #footer .center .lead .right img {
+          margin-left: 5px;
+          width: 100px; }
+        #footer .center .lead .right p {
+          font-size: 11px;
+          color: #666; }
+  #footer .bottom {
+    width: 100%;
+    height: 40px;
+    background: #3e3a39; }
+    #footer .bottom p {
+      width: 1200px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: white; }
