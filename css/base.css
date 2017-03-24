@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+/*---------------var------------------*/
+>>>>>>> 537217e3609ca5acf8e5f9e9fad356659fade931
 /*---------------reset------------------*/
 body, dl, dd, h1, h2, h3, h4, h5, h6, p, form, figure, figcaption {
   margin: 0px; }
@@ -42,6 +46,7 @@ input, textarea, select {
     content: "\200B";
     clear: both;
     height: 0; }
+<<<<<<< HEAD
 
 
 /*-------------header---------------*/
@@ -350,3 +355,5 @@ input, textarea, select {
       line-height: 40px;
       text-align: center;
       color: white; }
+=======
+>>>>>>> 537217e3609ca5acf8e5f9e9fad356659fade931
