@@ -1,0 +1,66 @@
+#header-wrap {
+  height: 132px; }
+  #header-wrap .headerg .box .left > span:nth-of-type(1) {
+    margin-left: 10px; }
+  #header-wrap .headerg .box .right {
+    width: 290px; }
+    #header-wrap .headerg .box .right ul li:nth-of-type(1) {
+      padding-left: 3px; }
+      #header-wrap .headerg .box .right ul li:nth-of-type(1) i {
+        display: inline-block;
+        width: 7px;
+        height: 6px;
+        margin-left: 3px;
+        background: url(../images/spirit/icon.png);
+        background-position: -4px -7px; }
+      #header-wrap .headerg .box .right ul li:nth-of-type(1):hover i {
+        background-position: -4px -22px; }
+  #header-wrap .header:nth-of-type(2) {
+    width: 1190px;
+    height: 80px;
+    overflow: hidden; }
+  #header-wrap .header:nth-of-type(2) .confirm {
+    float: right;
+    width: 370px;
+    padding-top: 20px; }
+    #header-wrap .header:nth-of-type(2) .confirm a {
+      margin: 0;
+      width: 36px;
+      height: 36px;
+      background: url(../images/spirit/icon-bg.jpg) no-repeat;
+      text-align: center; }
+      #header-wrap .header:nth-of-type(2) .confirm a i {
+        display: block;
+        line-height: 36px;
+        color: #fa332e;
+        font-size: 22px; }
+    #header-wrap .header:nth-of-type(2) .confirm a:nth-of-type(2) {
+      background-position: 0px 0px; }
+      #header-wrap .header:nth-of-type(2) .confirm a:nth-of-type(2) i {
+        font-size: 26px; }
+    #header-wrap .header:nth-of-type(2) .confirm a:nth-of-type(3) {
+      background-position: 0px 0px; }
+    #header-wrap .header:nth-of-type(2) .confirm span {
+      display: block;
+      float: left;
+      height: 36px;
+      line-height: 36px;
+      margin-right: 24px; }
+  #header-wrap .header:nth-of-type(2) #logo img {
+    margin-top: -20px; }
+  #header-wrap .header:nth-of-type(2) #logo a {
+    height: 85px;
+    line-height: 100px;
+    font-size: 26px;
+    margin-left: 20px; }
+
+#header-wrap:after {
+  display: none; }
+
+
+#footer {
+  padding-top: 0;
+  height: 240px;
+  background: #fff; }
+  #footer .center {
+    background: #d3d3d3; }

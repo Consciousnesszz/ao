@@ -1,0 +1,361 @@
+$red : #f4407b;
+
+
+
+.main-wrap{
+	width: 100%;
+	background: #f2f2f2;
+	#main{
+		width: 1200px;
+		margin: 0 auto;
+		padding-top: 10px;
+		padding-bottom: 50px;
+		#title{
+			width: 1150px;
+			padding: 0 20px;
+			margin: 0 5px;
+			height: 40px;
+			background: #fff;
+			margin-bottom: 10px;
+			> div{
+				float: left;
+				height: 40px;
+				line-height: 40px;
+				color: #666;
+			}
+			.check{
+				width: 280px;
+			}
+			div:nth-of-type(2){
+				width: 320px;
+			}
+			div:nth-of-type(3){
+				width: 190px;
+			}
+			div:nth-of-type(4){
+				width: 160px;
+			}
+			div:nth-of-type(5){
+				width: 140px;
+			}
+		}
+
+		.lbody{
+			width: 1150px;
+			padding: 0 20px;
+			margin: 0 5px;
+			background: #fff;
+			.top{
+				width: 100%;
+				height: 82px;
+				.store{
+					line-height: 45px;
+					height: 45px;
+					overflow: hidden;
+					.left{
+						width: 600px;
+						float: left;
+						span{
+							font-size: 16px;
+						}
+						b{
+							font-weight: normal;
+							display: inline-block;
+						    vertical-align: middle;
+						    background: #f4407b;
+						    border-radius: 10px;
+						    color: #fff;
+						    margin-left: 10px;
+						    line-height: 16px;
+						    padding: 0 5px;
+						    font-size: 12px;
+						}
+					}
+					.right{
+						width: 200px;
+						float: left;
+						i{
+							color: #f4407b;
+							margin-right: 5px;
+						}
+						a{
+							color: $red;
+						}
+					}
+				}
+				.location{
+					width: 200px;
+					height: 35px;
+					margin-left: 10px;
+				}
+				&:after{
+					content: "";
+					display: block;
+					width: 100%;
+					height: 1px;
+					background: #ccc;
+				}
+			}
+			.center{
+				width: 100%;
+				height: 164px;
+				.ctop{
+					width: 100%;
+					height: 111px;
+					position: relative;
+					.checkpro{
+						position: absolute;
+						top: 46px;
+						left: 10px;
+					}
+					.product{
+						width: 344px;
+						height: 110px;
+						margin: 0 205px 0 50px;
+						float: left;
+						img{
+							vertical-align: middle;
+						}
+						.intro{
+							vertical-align: middle;
+							display: inline-block;
+							width: 256px;
+							height: 110px;
+							margin-left: 5px;
+							.black{
+								width: 100%;
+								white-space: nowrap;
+								overflow: hidden;
+								text-overflow:ellipsis;
+								margin-top: 20px;
+							}
+							.gray{
+								color: #666;
+								font-size: 11px;
+								i{
+								    display: inline-block;
+								    width: 7px;
+								    height: 6px;
+								    margin-left: 3px;
+								    background: url(../images/spirit/icon.png);
+								    background-position: -4px -7px;
+								}
+							}
+						}
+					}
+					.rprice{
+						width: 77px;
+						height: 110px;
+						float: left;
+						margin-right: 90px;
+						font-size: 11px;
+						p{
+							margin-top: 38px;
+							color: #666;
+							font-weight: bold;
+						}
+						span{
+							text-decoration: line-through;
+							color: #ccc;
+						}
+					}
+					.setnum{
+						width: 88px;
+						height: 110px;
+						margin-right: 110px;
+						float: left;
+						a{
+							display: inline-block;
+							width: 23px;
+							height: 23px;
+							line-height: 23px;
+							font-size: 16px;
+							border: 1px solid #aaa;
+							text-align: center;
+							vertical-align: middle;
+							margin-right: -4px;
+						}
+						a:nth-of-type(2){
+							margin-left: -4px;
+						}
+						.pronum{
+							display: inline-block;
+							vertical-align: middle;
+							margin: 0;
+							padding: 0;
+							width: 28px;
+							height: 23px;
+							border: 0;
+							text-indent: 12px;
+							border-top: 1px solid #aaa;
+							border-bottom: 1px solid #aaa;
+						}
+						&:after{
+							content: "";
+							display: inline-block;
+							width: 0;
+							height: 110px;
+							vertical-align: middle;
+						}
+					}
+					.countp{
+						width: 150px;
+						height: 110px;
+						float: left;
+						p{
+							margin-top: 38px;
+						}
+					}
+					.doable{
+						overflow: hidden;
+						a{
+							color: #999;
+							display: block;
+							margin-top: 34px;
+						}
+						a:nth-of-type(2){
+							margin-top: 8px;
+						}
+					}
+					&:after{
+						content: "";
+						display: block;
+						width: 100%;
+						height: 1px;
+						background: #ccc;
+						position: absolute;
+						bottom: 0;
+					}
+				}
+				.cbottom{
+					width: 100%;
+					height: 52px;
+					background: #fef6f3;
+					> div{
+						width: 270px;
+						height: 52px;
+						float: right;
+						margin-right: 10px;
+						> p{
+							height: 52px;
+							line-height: 52px;
+							float: left;
+							font-size: 11px;
+						}
+						.should{
+							width: 163px;
+						}
+						.tag{
+							float: right;
+							span{
+								display: block;
+								height: 24px;
+								background: $red;
+								float: left;
+								margin-top: 15px;
+								line-height: 24px;
+								color: #fff;
+								text-align: center;
+							}
+							span:nth-of-type(1){
+								width: 40px;
+							}
+							span:nth-of-type(2){
+								border: 1px solid $red;
+								height: 22px;
+								padding: 0 5px;
+								background: #fff;
+								color: $red;
+							}
+						}
+						.red{
+							color: $red;
+						}
+					}
+				}
+			}
+			.bottom{
+				width: 100%;
+				height: 50px;
+				.counter{
+					width: 300px;
+					height: 50px;
+					float: left;
+					line-height: 50px;
+					font-size: 11px;
+					i{
+						color: $red;
+						margin: 0 15px 0 10px;
+					}
+					.num{
+						margin-left: 15px;
+						color: $red;
+						font-weight: bold;
+					}
+				}
+				.detail{
+					width: 530px;
+					height: 50px;
+					float: right;
+					.discript{
+						float: left;
+						margin-left: 50px;
+						height: 50px;
+						line-height: 50px;
+						.red{
+							color: $red;
+							font-weight: bold;
+						}
+						.tax{
+							font-weight: bold;
+						}
+					}
+				}
+			}
+		}
+
+		#lfoot{
+			width: 1175px;
+			padding-left: 20px;
+			margin-left: 5px;
+			background: #fff;
+			height: 62px;
+			margin-top: 23px;
+			font-size: 11px;
+			line-height: 62px;
+			.left{
+				width: 262px;
+				height: 62px;
+				float: left;
+				a{
+					margin-left: 15px;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+			.right{
+				width: 480px;
+				height: 62px;
+				float: right;
+				font-size: 14px;
+				.countall{
+					font-size: 20px;
+					font-weight: bold;
+					color: $red;
+					margin-right: 22px;
+				}
+				a{
+					display: block;
+					float: right;
+					width: 200px;
+					height: 62px;
+					background: $red;
+					color: #fff;
+					font-size: 18px;
+					text-align: center;
+				}
+			}
+		}
+	}
+}

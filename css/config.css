@@ -1,0 +1,171 @@
+.main-wrap {
+  width: 100%;
+  background: #f2f2f2; }
+  .main-wrap #main {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 50px; }
+    .main-wrap #main h3 {
+      padding-left: 12px;
+      border-left: 3px solid #f4407b;
+      height: 20px;
+      font-size: 20px;
+      margin-top: 28px;
+      line-height: 18px; }
+    .main-wrap #main .receiver {
+      width: 1100px;
+      height: 138px;
+      padding: 0 45px;
+      margin-left: 10px;
+      background: #fff;
+      overflow: hidden; }
+      .main-wrap #main .receiver a {
+        display: block;
+        width: 116px;
+        height: 28px;
+        border: 1px solid #aaa;
+        text-align: center;
+        line-height: 28px;
+        margin-top: 35px; }
+    .main-wrap #main .identify {
+      width: 1100px;
+      height: 294px;
+      padding: 0 45px;
+      margin-left: 10px;
+      background: #fff;
+      overflow: hidden;
+      margin-top: 20px; }
+      .main-wrap #main .identify .title {
+        margin-top: 28px;
+        width: 100%;
+        height: 20px; }
+        .main-wrap #main .identify .title h3 {
+          float: left;
+          margin-top: 0; }
+        .main-wrap #main .identify .title p {
+          font-size: 10px;
+          color: #f4407b;
+          float: left;
+          margin-left: 6px; }
+          .main-wrap #main .identify .title p a {
+            color: #666; }
+            .main-wrap #main .identify .title p a:hover {
+              text-decoration: underline; }
+      .main-wrap #main .identify .priinfo {
+        width: 100%;
+        height: 200px; }
+        .main-wrap #main .identify .priinfo p {
+          margin-top: 18px;
+          color: #666;
+          height: 24px;
+          line-height: 24px; }
+        .main-wrap #main .identify .priinfo .left {
+          width: 82px;
+          height: 100%;
+          float: left;
+          margin: 0 10px 0 20px;
+          text-align: right; }
+        .main-wrap #main .identify .priinfo .right {
+          width: 400px;
+          height: 100%;
+          float: left; }
+          .main-wrap #main .identify .priinfo .right .set {
+            width: 375px; }
+            .main-wrap #main .identify .priinfo .right .set input {
+              width: 170px;
+              height: 23px;
+              border: 1px solid #ccc;
+              border-radius: 2px; }
+            .main-wrap #main .identify .priinfo .right .set a:nth-of-type(1) {
+              display: inline-block;
+              width: 66px;
+              height: 24px;
+              margin-left: 8px;
+              color: #fff;
+              text-align: center;
+              line-height: 24px;
+              background: #f4407b;
+              border-radius: 2px; }
+            .main-wrap #main .identify .priinfo .right .set a:nth-of-type(2) {
+              display: inline-block;
+              width: 15px;
+              height: 15px;
+              border-radius: 50%;
+              line-height: 15px;
+              text-align: center;
+              background: #f4407b;
+              color: #fff; }
+            .main-wrap #main .identify .priinfo .right .set a:nth-of-type(3) {
+              color: #f4407b; }
+          .main-wrap #main .identify .priinfo .right .update a {
+            display: block;
+            width: 86px;
+            height: 32px;
+            background: #f2f2f2;
+            border: 1px solid #ddd;
+            text-align: center;
+            line-height: 32px;
+            color: #ccc; }
+        .main-wrap #main .identify .priinfo .notice {
+          clear: both;
+          margin-left: 20px;
+          font-size: 11px;
+          color: #999; }
+    .main-wrap #main .proinfo {
+      width: 1100px;
+      height: 294px;
+      padding: 0 45px;
+      margin-left: 10px;
+      background: #fff;
+      overflow: hidden;
+      margin-top: 20px; }
+      .main-wrap #main .proinfo h3 {
+        margin-bottom: 18px; }
+      .main-wrap #main .proinfo .protemp {
+        width: 100%;
+        height: 315px;
+        margin-bottom: 20px; }
+        .main-wrap #main .proinfo .protemp .store {
+          width: 317px;
+          height: 29px; }
+          .main-wrap #main .proinfo .protemp .store p {
+            float: left;
+            color: #000; }
+          .main-wrap #main .proinfo .protemp .store span {
+            display: inline-block;
+            vertical-align: middle;
+            background: #f03467;
+            color: #fff;
+            padding: 0 9px;
+            border-radius: 10px;
+            margin-left: 15px;
+            font-size: 11px;
+            margin-right: 15px; }
+          .main-wrap #main .proinfo .protemp .store a {
+            font-size: 11px; }
+            .main-wrap #main .proinfo .protemp .store a i {
+              margin-right: 3px; }
+
+/*.rbottom{
+				width: 480px;
+				height: 62px;
+				float: right;
+				font-size: 14px;
+				.countall{
+					font-size: 20px;
+					font-weight: bold;
+					color: $red;
+					margin-right: 22px;
+				}
+				a{
+					display: block;
+					float: right;
+					width: 200px;
+					height: 62px;
+					background: $red;
+					color: #fff;
+					font-size: 18px;
+					text-align: center;
+				}
+			}*/

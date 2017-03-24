@@ -1,0 +1,131 @@
+.container {
+  width: 100%;
+  margin: 0; }
+
+.wrap {
+  width: 992px;
+  margin: 0 auto; }
+
+.formwrap {
+  width: 100%;
+  height: 480px;
+  background: url(../images/lunbo/move1.jpeg);
+  background-position: -720px;
+  overflow: hidden; }
+  .formwrap .pos {
+    width: 992px;
+    height: 390px;
+    margin: 22px auto;
+    position: relative; }
+    .formwrap .pos form {
+      background: #fff;
+      height: 390px;
+      width: 350px;
+      position: absolute;
+      right: 0; }
+      .formwrap .pos form .title {
+        width: 100%;
+        height: 54px;
+        border-bottom: 1px solid #ddd; }
+        .formwrap .pos form .title a {
+          display: block;
+          float: left;
+          width: 70px;
+          margin-left: 60px;
+          height: 54px;
+          line-height: 54px;
+          font-size: 16px;
+          color: #999; }
+        .formwrap .pos form .title a:nth-of-type(2) {
+          width: 115px; }
+      .formwrap .pos form .inp {
+        width: 315px;
+        height: 40px;
+        margin: 25px auto 0;
+        position: relative; }
+        .formwrap .pos form .inp input {
+          width: 315px;
+          height: 36px;
+          border: 1px solid #e5e5e5;
+          text-indent: 42px;
+          border-radius: 2px; }
+        .formwrap .pos form .inp i {
+          width: 40px;
+          height: 38px;
+          background: #f9aec3;
+          position: absolute;
+          top: 1px;
+          left: 1px;
+          font-size: 22px;
+          line-height: 38px;
+          color: #fff;
+          text-align: center; }
+      .formwrap .pos form .btn {
+        margin-top: 0; }
+      .formwrap .pos form .btn input {
+        background: #ff337e;
+        border: 0;
+        border-radius: 4px;
+        text-indent: 0;
+        color: #fff;
+        font-size: 16px;
+        transition: background 0.5s; }
+        .formwrap .pos form .btn input:hover {
+          background: #ff222e; }
+      .formwrap .pos form .options {
+        width: 315px;
+        height: 57px;
+        margin: 0 auto; }
+        .formwrap .pos form .options .left {
+          width: 120px;
+          height: 57px;
+          line-height: 57px;
+          float: left;
+          color: #aaa; }
+        .formwrap .pos form .options .right {
+          width: 73px;
+          height: 57px;
+          line-height: 57px;
+          text-align: center;
+          float: right; }
+      .formwrap .pos form .others {
+        width: 315px;
+        height: 60px;
+        margin: 48px auto 0; }
+        .formwrap .pos form .others p {
+          font-size: 11px;
+          color: #aaa; }
+        .formwrap .pos form .others > div a {
+          display: block;
+          width: 28px;
+          height: 29px;
+          float: left;
+          margin-right: 4px; }
+          .formwrap .pos form .others > div a i {
+            color: #ccc;
+            font-size: 28px;
+            transition: color 0.5s; }
+        .formwrap .pos form .others > div a:nth-of-type(1):hover i {
+          color: skyblue; }
+        .formwrap .pos form .others > div a:nth-of-type(2) {
+          font-size: 28px;
+          margin-right: 6px; }
+          .formwrap .pos form .others > div a:nth-of-type(2) i {
+            line-height: 32px;
+            font-size: 32px; }
+          .formwrap .pos form .others > div a:nth-of-type(2):hover i {
+            color: #0a7; }
+        .formwrap .pos form .others > div a:nth-of-type(3) {
+          font-size: 30px;
+          margin-right: 10px; }
+          .formwrap .pos form .others > div a:nth-of-type(3) i {
+            line-height: 34px;
+            font-size: 34px; }
+          .formwrap .pos form .others > div a:nth-of-type(3):hover i {
+            color: #0af; }
+        .formwrap .pos form .others > div a:nth-of-type(4) {
+          font-size: 26px; }
+          .formwrap .pos form .others > div a:nth-of-type(4) i {
+            font-size: 30px; }
+          .formwrap .pos form .others > div a:nth-of-type(4):hover i {
+            color: #f30; }

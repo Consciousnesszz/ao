@@ -1,0 +1,288 @@
+.main-wrap {
+  width: 100%;
+  background: #f2f2f2; }
+  .main-wrap #main {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 50px; }
+    .main-wrap #main #title {
+      width: 1150px;
+      padding: 0 20px;
+      margin: 0 5px;
+      height: 40px;
+      background: #fff;
+      margin-bottom: 10px; }
+      .main-wrap #main #title > div {
+        float: left;
+        height: 40px;
+        line-height: 40px;
+        color: #666; }
+      .main-wrap #main #title .check {
+        width: 280px; }
+      .main-wrap #main #title div:nth-of-type(2) {
+        width: 320px; }
+      .main-wrap #main #title div:nth-of-type(3) {
+        width: 190px; }
+      .main-wrap #main #title div:nth-of-type(4) {
+        width: 160px; }
+      .main-wrap #main #title div:nth-of-type(5) {
+        width: 140px; }
+    .main-wrap #main .lbody {
+      width: 1150px;
+      padding: 0 20px;
+      margin: 0 5px;
+      background: #fff; }
+      .main-wrap #main .lbody .top {
+        width: 100%;
+        height: 82px; }
+        .main-wrap #main .lbody .top .store {
+          line-height: 45px;
+          height: 45px;
+          overflow: hidden; }
+          .main-wrap #main .lbody .top .store .left {
+            width: 600px;
+            float: left; }
+            .main-wrap #main .lbody .top .store .left span {
+              font-size: 16px; }
+            .main-wrap #main .lbody .top .store .left b {
+              font-weight: normal;
+              display: inline-block;
+              vertical-align: middle;
+              background: #f4407b;
+              border-radius: 10px;
+              color: #fff;
+              margin-left: 10px;
+              line-height: 16px;
+              padding: 0 5px;
+              font-size: 12px; }
+          .main-wrap #main .lbody .top .store .right {
+            width: 200px;
+            float: left; }
+            .main-wrap #main .lbody .top .store .right i {
+              color: #f4407b;
+              margin-right: 5px; }
+            .main-wrap #main .lbody .top .store .right a {
+              color: #f4407b; }
+        .main-wrap #main .lbody .top .location {
+          width: 200px;
+          height: 35px;
+          margin-left: 10px; }
+        .main-wrap #main .lbody .top:after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 1px;
+          background: #ccc; }
+      .main-wrap #main .lbody .center {
+        width: 100%;
+        height: 164px; }
+        .main-wrap #main .lbody .center .ctop {
+          width: 100%;
+          height: 111px;
+          position: relative; }
+          .main-wrap #main .lbody .center .ctop .checkpro {
+            position: absolute;
+            top: 46px;
+            left: 10px; }
+          .main-wrap #main .lbody .center .ctop .product {
+            width: 344px;
+            height: 110px;
+            margin: 0 205px 0 50px;
+            float: left; }
+            .main-wrap #main .lbody .center .ctop .product img {
+              vertical-align: middle; }
+            .main-wrap #main .lbody .center .ctop .product .intro {
+              vertical-align: middle;
+              display: inline-block;
+              width: 256px;
+              height: 110px;
+              margin-left: 5px; }
+              .main-wrap #main .lbody .center .ctop .product .intro .black {
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-top: 20px; }
+              .main-wrap #main .lbody .center .ctop .product .intro .gray {
+                color: #666;
+                font-size: 11px; }
+                .main-wrap #main .lbody .center .ctop .product .intro .gray i {
+                  display: inline-block;
+                  width: 7px;
+                  height: 6px;
+                  margin-left: 3px;
+                  background: url(../images/spirit/icon.png);
+                  background-position: -4px -7px; }
+          .main-wrap #main .lbody .center .ctop .rprice {
+            width: 77px;
+            height: 110px;
+            float: left;
+            margin-right: 90px;
+            font-size: 11px; }
+            .main-wrap #main .lbody .center .ctop .rprice p {
+              margin-top: 38px;
+              color: #666;
+              font-weight: bold; }
+            .main-wrap #main .lbody .center .ctop .rprice span {
+              text-decoration: line-through;
+              color: #ccc; }
+          .main-wrap #main .lbody .center .ctop .setnum {
+            width: 88px;
+            height: 110px;
+            margin-right: 110px;
+            float: left; }
+            .main-wrap #main .lbody .center .ctop .setnum a {
+              display: inline-block;
+              width: 23px;
+              height: 23px;
+              line-height: 23px;
+              font-size: 16px;
+              border: 1px solid #aaa;
+              text-align: center;
+              vertical-align: middle;
+              margin-right: -4px; }
+            .main-wrap #main .lbody .center .ctop .setnum a:nth-of-type(2) {
+              margin-left: -4px; }
+            .main-wrap #main .lbody .center .ctop .setnum .pronum {
+              display: inline-block;
+              vertical-align: middle;
+              margin: 0;
+              padding: 0;
+              width: 28px;
+              height: 23px;
+              border: 0;
+              text-indent: 12px;
+              border-top: 1px solid #aaa;
+              border-bottom: 1px solid #aaa; }
+            .main-wrap #main .lbody .center .ctop .setnum:after {
+              content: "";
+              display: inline-block;
+              width: 0;
+              height: 110px;
+              vertical-align: middle; }
+          .main-wrap #main .lbody .center .ctop .countp {
+            width: 150px;
+            height: 110px;
+            float: left; }
+            .main-wrap #main .lbody .center .ctop .countp p {
+              margin-top: 38px; }
+          .main-wrap #main .lbody .center .ctop .doable {
+            overflow: hidden; }
+            .main-wrap #main .lbody .center .ctop .doable a {
+              color: #999;
+              display: block;
+              margin-top: 34px; }
+            .main-wrap #main .lbody .center .ctop .doable a:nth-of-type(2) {
+              margin-top: 8px; }
+          .main-wrap #main .lbody .center .ctop:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #ccc;
+            position: absolute;
+            bottom: 0; }
+        .main-wrap #main .lbody .center .cbottom {
+          width: 100%;
+          height: 52px;
+          background: #fef6f3; }
+          .main-wrap #main .lbody .center .cbottom > div {
+            width: 270px;
+            height: 52px;
+            float: right;
+            margin-right: 10px; }
+            .main-wrap #main .lbody .center .cbottom > div > p {
+              height: 52px;
+              line-height: 52px;
+              float: left;
+              font-size: 11px; }
+            .main-wrap #main .lbody .center .cbottom > div .should {
+              width: 163px; }
+            .main-wrap #main .lbody .center .cbottom > div .tag {
+              float: right; }
+              .main-wrap #main .lbody .center .cbottom > div .tag span {
+                display: block;
+                height: 24px;
+                background: #f4407b;
+                float: left;
+                margin-top: 15px;
+                line-height: 24px;
+                color: #fff;
+                text-align: center; }
+              .main-wrap #main .lbody .center .cbottom > div .tag span:nth-of-type(1) {
+                width: 40px; }
+              .main-wrap #main .lbody .center .cbottom > div .tag span:nth-of-type(2) {
+                border: 1px solid #f4407b;
+                height: 22px;
+                padding: 0 5px;
+                background: #fff;
+                color: #f4407b; }
+            .main-wrap #main .lbody .center .cbottom > div .red {
+              color: #f4407b; }
+      .main-wrap #main .lbody .bottom {
+        width: 100%;
+        height: 50px; }
+        .main-wrap #main .lbody .bottom .counter {
+          width: 300px;
+          height: 50px;
+          float: left;
+          line-height: 50px;
+          font-size: 11px; }
+          .main-wrap #main .lbody .bottom .counter i {
+            color: #f4407b;
+            margin: 0 15px 0 10px; }
+          .main-wrap #main .lbody .bottom .counter .num {
+            margin-left: 15px;
+            color: #f4407b;
+            font-weight: bold; }
+        .main-wrap #main .lbody .bottom .detail {
+          width: 530px;
+          height: 50px;
+          float: right; }
+          .main-wrap #main .lbody .bottom .detail .discript {
+            float: left;
+            margin-left: 50px;
+            height: 50px;
+            line-height: 50px; }
+            .main-wrap #main .lbody .bottom .detail .discript .red {
+              color: #f4407b;
+              font-weight: bold; }
+            .main-wrap #main .lbody .bottom .detail .discript .tax {
+              font-weight: bold; }
+    .main-wrap #main #lfoot {
+      width: 1175px;
+      padding-left: 20px;
+      margin-left: 5px;
+      background: #fff;
+      height: 62px;
+      margin-top: 23px;
+      font-size: 11px;
+      line-height: 62px; }
+      .main-wrap #main #lfoot .left {
+        width: 262px;
+        height: 62px;
+        float: left; }
+        .main-wrap #main #lfoot .left a {
+          margin-left: 15px; }
+          .main-wrap #main #lfoot .left a:hover {
+            text-decoration: underline; }
+      .main-wrap #main #lfoot .right {
+        width: 480px;
+        height: 62px;
+        float: right;
+        font-size: 14px; }
+        .main-wrap #main #lfoot .right .countall {
+          font-size: 20px;
+          font-weight: bold;
+          color: #f4407b;
+          margin-right: 22px; }
+        .main-wrap #main #lfoot .right a {
+          display: block;
+          float: right;
+          width: 200px;
+          height: 62px;
+          background: #f4407b;
+          color: #fff;
+          font-size: 18px;
+          text-align: center; }
