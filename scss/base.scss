@@ -5,6 +5,49 @@ $bodyWidth: 1200px;
 $baseColor:#ff432e;
 $footerColor:#3e3a39;
 
+/*---------------reset------------------*/
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, form, figure, figcaption {
+  margin: 0px; }
+
+ul, ol {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  font: 14px/1.5 "Microsoft YaHei";
+  width: 100%;
+  color: #333;}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+/* click */
+a {
+  outline: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent; }
+  a:focus {
+    outline: 0; }
+  a:link, a:visited {
+    color: #333;
+    text-decoration: none; }
+
+a img {
+  border: none; }
+
+input, textarea, select {
+  outline: none;
+  font: 12px/1.5 "Microsoft YaHei"; }
+
+/* clearFloat */
+.clearfix {
+  *zoom: 1; }
+  .clearfix:after {
+    display: block;
+    content: "\200B";
+    clear: both;
+    height: 0; }
 /*-------------header---------------*/
 #header-wrap {
 	width: 100%;
@@ -36,24 +79,101 @@ $footerColor:#3e3a39;
                     color:$baseColor;
                     margin-left: 12px;
                 }
-                #addr{
+                .addr-wrap{
                     float:right;
+                    position: relative;
                     div{
                         margin: 4px;
-                        border-radius: 4px; 
+                        border-radius: 2px; 
                         height: 25px;
                         float:right;
                         background: #fff;
                         line-height: 25px;
-                        padding: 0 10px;
+                        padding: 0 16px 0 10px;
                         border: 1px solid #ddd;
+                        position: relative;
+                        z-index: 2;
                         span{
                             padding: 0 5px;
                         }
                     }
                     i{
-                        display: block;
-                        float: right;
+                        position: absolute;
+                        right: 9px;
+                        top: 1px;
+                        font-size: 5px;
+                        z-index: 3;
+                    }
+                    #addr-select{
+                        display: none;
+                        border: 1px solid #e4e4e4;
+                        border-radius: 0 3px 3px;
+                        box-shadow: 1px 1px 6px -1px rgba(0,0,0,.2);
+                        position: absolute;
+                        width: 390px;
+                        height: 177px;
+                        background: #fff;
+                        z-index: 1;
+                        top: 26px;
+                        left: 30px;
+                        padding: 15px;
+                        .close{
+                            display: block;
+                            width: 17px;
+                            height: 17px;
+                            text-align: center;
+                            line-height: 17px;
+                            color: #fff;
+                            background: #aaa;
+                            font-weight: bold;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: -8px;
+                            right: -8px;
+                            padding: 0;
+                            cursor: pointer;
+                        }
+                        .piecenav{
+                            width: 390px;
+                            height: 26px;
+                            position: relative;
+                            border-bottom: 1px solid $baseColor;
+                            li{
+                                display: inline-block;
+                                float: left;
+                                cursor: pointer;
+                                margin-top: 0;
+                                min-width: 50px;
+                                position: relative;
+                                height: 24px;
+                                line-height: 23px;
+                                padding: 0 21px 1px 11px;
+                                margin-right: 3px;
+                                border: 1px solid #ddd;
+                                border-radius: 3px 3px 0 0;
+                                border-bottom: 0;
+                                color: #ccc;
+                                text-align: center;
+                            }
+                        }
+                        .addr-options0, .addr-options1, .addr-options2{
+                            display: none;
+                            padding-top: 5px;
+                            margin-top: 0;
+                            max-height: 150px;
+                            overflow: auto;
+                            width: 100%;
+                            li{
+                                display: inline-block;
+                                float: left;
+                                width: 70px;
+                                height: auto;
+                                min-height: 0;
+                                padding: 2px 0 2px 15px;
+                                margin-top: 0;
+                                cursor: pointer;
+                            }
+                        }
                     }
                 }
             }
@@ -101,10 +221,27 @@ $footerColor:#3e3a39;
                                 background-position: -2px -66px;
                             }
                         }
+
                         .orange{
                             display: inline;
                             padding: 0 3px;
                             color: $baseColor;
+                        }
+                    }
+                    li:nth-of-type(1){
+                        padding-left: 3px;
+                        i{
+                            display: inline-block;
+                            width: 7px;
+                            height: 6px;
+                            margin-left: 3px;
+                            background: url(../images/spirit/icon.png);
+                            background-position: -4px -7px;
+                        }
+                        &:hover{
+                            i{
+                                background-position: -4px -22px;
+                            }
                         }
                     }
                 }
@@ -149,8 +286,12 @@ $footerColor:#3e3a39;
                     float: left;
                     background:$baseColor;
                     i{
+                        display: block;
+                        width: 70px;
+                        height: 30px;
                         color:white;
-                        line-height:34px;
+                        line-height:30px;
+                        font-size: 20px;
                         text-align:center;
                     }
                 }
@@ -198,6 +339,10 @@ $footerColor:#3e3a39;
             line-height:40px;
             float:left;
             color: #000;
+            font-weight: bold;
+            i{
+                margin-right: 15px;
+            }
         }
         #nav{
             width:585px;
@@ -229,7 +374,7 @@ $footerColor:#3e3a39;
             }
         }
         #special{
-            width:312px;
+            width:330px;
             float:right;
             height:40px;
             ul{
@@ -239,7 +384,7 @@ $footerColor:#3e3a39;
                     text-align:center;
                     padding: 0 13px;
                     a{
-                        font-size:#aaa;
+                        font-size:16px;
                     }
                     &:hover{
                         a{
@@ -257,10 +402,11 @@ $footerColor:#3e3a39;
     width:100%;
     height:465px;
     position: relative;
-    ul{
+    overflow: hidden;
+    > ul{
         width:100%;
         height:100%;
-        position: relative;
+        position: absolute;
         li{
             width:100%;
             height:100%;
@@ -271,14 +417,17 @@ $footerColor:#3e3a39;
             }
         }
     }
+    .subnav-wrap{
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
     #subnav{
         width: 220px;
         height: 100%;
         background: #f5f5f5;
-        position: absolute;
-        z-index: 7;
-        top: 0;
-        left: 30px;
+        float: left;
         ul{
             width: 220px;
             height: 77px;
@@ -433,6 +582,21 @@ $footerColor:#3e3a39;
                     span{
                         display: inline-block;
                         margin-top: 18px;
+                        color: #555;
+                    }
+                    a i{
+                        font-size: 30px;
+                        margin-left: 20px;
+                    }
+                    a:first-of-type{
+                        i{
+                            color: #a05;
+                        }
+                    }
+                    a:last-of-type{
+                        i{
+                            color: #0a3;
+                        }
                     }
                 }
             }

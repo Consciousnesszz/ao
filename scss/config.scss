@@ -137,7 +137,7 @@ $red : #f4407b;
 		}
 		.proinfo{
 			width: 1100px;
-			height: 294px;
+			height: 641px;
 			padding: 0 45px;
 			margin-left: 10px;
 			background: #fff; 
@@ -148,7 +148,7 @@ $red : #f4407b;
 			}
 			.protemp{
 				width: 100%;
-				height: 315px;
+				height: 316px;
 				margin-bottom: 20px;
 				.store{
 					width: 317px;
@@ -175,7 +175,241 @@ $red : #f4407b;
 						}
 					}
 				}
+				table{
+					width: 100%;
+					height: 123px;
+					border: 1px solid #e4e4e4;
+					border-collapse:collapse;
+					thead{
+						width: 100%;
+						height: 38px;
+						background: #f2f2f2;
+						line-height: 38px;
+					}
+					tr td{
+						text-indent: 15px;
+						p{
+							text-indent: 0;
+							margin-left: 15px;
+						}
+						span{
+							margin-left: 15px;
+							font-size: 11px;
+						}
+						i{
+							display: inline-block;
+					        width: 9px;
+					        height: 6px;
+					        margin-left: 3px;
+					        background: url(../images/spirit/icon.png);
+					        background-position: -4px -7px;
+						}
+					}
+					tr td:nth-of-type(1){
+						width: 160px;
+					}
+					tr td:nth-of-type(2){
+						width: 355px;
+					}
+					tr td:nth-of-type(3){
+						width: 155px;
+					}
+					tr td:nth-of-type(4){
+						width: 170px;
+					}
+					tr td:nth-of-type(5){
+						width: 125px;
+					}
+					tbody{
+						tr td:nth-of-type(1){
+							border-right: 1px solid #e4e4e4;
+						}
+						.red{
+							color:$red;
+							margin-left: 0;
+						}
+					}
+				}
+				.express{
+					width: 1098px;
+					height: 50px;
+					line-height: 50px;
+					border: 1px solid #e4e4e4;
+					border-top: none;
+					.left{
+						width: 250px;
+						height: 100%;
+						margin-left: 26px;
+						font-size: 12px;
+						float: left;
+						p{
+							float: left;
+							color: #000;
+							margin-right: 10px;
+						}
+						.red{
+							color:$red;
+							font-weight: bold;
+						}
+						span{
+							color:#aaa;
+						}
+					}
+					.right{
+						width: 215px;
+						height: 100%;
+						float: right;
+						font-size: 12px;
+						color: #000;
+						p{
+							width: 55px;
+							height: 100%;
+							float: left;
+							line-height: 50px;
+							text-align: right;
+							margin-right: 85px;
+						}
+					}
+				}
+				.cut, .showtax, .total{
+					@extend .express;
+				}
+				.cut{
+					height: 40px;
+					line-height: 40px;
+					p{
+						line-height: 40px !important;
+					}
+					i{
+						color:$red;
+						margin-left: 10px;
+						font-size: 10px;
+					}
+				}
+				.showtax{
+					border-bottom: none;
+					height: 36px;
+					line-height: 36px;
+					p{
+						line-height: 36px !important;
+					}
+				}
+				.total{
+					height: 36px;
+					line-height: 24px;
+					p{
+						line-height: 24px !important;
+					}
+				}
 			}
+			.infobottom{
+				width: 1100px;
+				height: 220px;
+				margin: 0 auto;
+				.left{
+					width: 580px;
+					height: 92px;
+					float: left;
+					a{
+						display: block;
+						width: 110px;
+						height: 18px;
+						font-size: 12px;
+					}
+					.referee{
+						    margin-top: 10px;
+						    width: 540px;
+						    height: 24px;
+						    background: #fcfbf4;
+						    border: 1px solid #fdecc9;
+						    padding: 20px;
+						    span{
+						    	font-size: 12px;
+						    }
+						    input{
+						    	width: 220px;
+						    	border: 1px solid #ccc;
+						    	border-radius: 2px;
+						    	outline: 0;
+						    	height: 20px;
+						    	line-height: 20px;
+						    	padding: 0 5px;
+						    	vertical-align: middle;
+						    }
+					}
+				}
+				.right{
+					width: 424px;
+					height: 219px;
+					float: right;
+					margin-right: 20px;
+					ul{
+						width: 100%;
+						height: 100px;
+						li{
+							width: 100%;
+							height: 25px;
+							.rleft{
+								display: block;
+								float: left;
+								font-size: 12px;
+								width: 250px;
+								height: 25px;
+								line-height: 25px;
+								text-align: right;
+							}
+							.rright{
+								display: block;
+								float: right;
+								font-size: 12px;
+								width: 100px;
+								height: 25px;
+								line-height: 25px;
+								text-align: right;
+							}
+						}
+					}
+					.rbottom{
+						>div{
+							width: 100%;
+							height: 48px;
+							line-height: 48px;
+							margin-top: 25px;
+							a:nth-of-type(1){
+								margin-left: 40px;
+								margin-right: 15px;
+							}
+							span:nth-of-type(1){
+								font-weight: bold;
+							}
+							.countall{
+								font-size: 18px;
+								color: $red;
+								margin-left: 10px;
+							}
+							a:nth-of-type(2){
+								display: block;
+								float: right;
+								width: 114px;
+								border-radius: 2px;
+								background: $red;
+								text-align: center;
+								color: #fff;
+								font-size: 18px;
+							}
+						}
+						.red{
+							color:$red;
+							width: 100%;
+							text-align: right;
+							height: 12px;
+							margin-top: 12px;
+						}
+					}
+				}
+			}
+			
+
 		}
 	}
 }

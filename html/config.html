@@ -19,14 +19,25 @@
 					<span>您好，</span>
 					<span id="account">dadfda</span>
 					<a href="#" class="orange">退出</a>
-					<div id="addr">
+					<div class="addr-wrap">
 						<span>配送至</span>
-						<div>
-							<span>四川</span>
-							<span>成都</span>
-							<span>锦江区</span>
+						<div id="addr">
+							<span class="info0">四川</span>
+							<span class="info1">成都</span>
+							<span class="info2">锦江区</span>
 						</div>
 						<i class="icon iconfont icon-xiala"></i>
+						<div id="addr-select">
+							<span class="close">x</span>
+							<ul class="piecenav">
+								<li><span class="cinfo0">四川</span><i class="icon iconfont icon-xiala"></i></li>
+								<li><span class="cinfo1">成都</span><i class="icon iconfont icon-xiala"></i></li>
+								<li><span class="cinfo2">锦江区</span><i class="icon iconfont icon-xiala"></i></li>
+							</ul>
+							<ol class="addr-options0">abc</ol>
+							<ol class="addr-options1">aaa</ol>
+							<ol class="addr-options2">ddd</ol>
+						</div>
 					</div>
 				</div>
 				<div class="right">
@@ -136,7 +147,7 @@
 						</div>
 						<div class="right">
 							<p>运费</p>
-							<p>￥0.00</p>
+							<span>￥0.00</span>
 						</div>
 					</div>
 					<div class="cut">
@@ -145,19 +156,19 @@
 						</div>
 						<div class="right">
 							<p>优惠金额</p>
-							<p>￥0.00</p>
+							<span>￥0.00</span>
 						</div>
 					</div>
 					<div class="showtax">
 						<div class="right">
 							<p>关税</p>
-							<p>￥15.35</p>
+							<span>￥15.35</span>
 						</div>
 					</div>
 					<div class="total">
 						<div class="right">
 							<p>合计</p>
-							<p>￥144.35</p>
+							<span>￥144.35</span>
 						</div>
 					</div>
 				</div>
@@ -178,9 +189,12 @@
 							<li><span class="rleft">关税</span><span class="rright totaltax">￥119.83</span></li>
 						</ul>
 						<div class="rbottom">
-							<span>总金额(包含运费及税费)：</span>
-							<span class="countall">￥129.00</span>
-							<a href="javascript:;">立即结算</a>
+							<div>
+								<a href="car.html">返回购物车</a>
+								<span>实付金额：</span>
+								<span class="countall">￥129.00</span>
+								<a href="javascript:;">立即结算</a>
+							</div>
 							<p class="red">温馨提示： 全球购订单提交后无法取消及变更收货信息</p>
 						</div>
 					</div>
@@ -242,5 +256,7 @@
 		</div>
 	</div>
 	
+	<script type="text/javascript" src="../js/tools/jquery.js"></script>
+	<script type="text/javascript" src="../js/addr.js"></script>
 </body>
 </html>
