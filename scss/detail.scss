@@ -3,9 +3,15 @@
 .subnav-wrap{
 	display: none;
     width: 1200px;
+<<<<<<< HEAD
     height: 467px;
     position: absolute;
     z-index: 2;
+=======
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+>>>>>>> be255ba55f6fa288cae1aa0629f3da4f6e2b94bb
     #subnav{
         height: 100%;
         background: #f5f5f5;
@@ -85,7 +91,10 @@
             position: absolute;
             top: 0;
             left: 220px;
+<<<<<<< HEAD
             z-index: 3;
+=======
+>>>>>>> be255ba55f6fa288cae1aa0629f3da4f6e2b94bb
             dl{
                 width: 280px;
                 height: 200px;
@@ -190,7 +199,11 @@
 	    			background-size: 900px 900px;
 	    			z-index: 1;
 	    		}
+<<<<<<< HEAD
 	    		.small{
+=======
+	    		.samll{
+>>>>>>> be255ba55f6fa288cae1aa0629f3da4f6e2b94bb
 	    			width: 400px;
 	    			height: 62px;
 	    			position: relative;
@@ -418,7 +431,10 @@
 									border-radius: 2px;
 									float: left;
 									margin: 3px;
+<<<<<<< HEAD
 									cursor: pointer;
+=======
+>>>>>>> be255ba55f6fa288cae1aa0629f3da4f6e2b94bb
 								}
 								.set{
 									color: #ff224e;
@@ -547,15 +563,23 @@
 				    font-size: 16px;
 				    color: #fff;
 				    height: 38px;
+<<<<<<< HEAD
 				    cursor: pointer;
 				}
 				.click{
+=======
+				}
+				li:first-of-type{
+>>>>>>> be255ba55f6fa288cae1aa0629f3da4f6e2b94bb
 					background: #fff;
 					color: #ff442e;
 				}
 			}
 			ol{
+<<<<<<< HEAD
 				display: none;
+=======
+>>>>>>> be255ba55f6fa288cae1aa0629f3da4f6e2b94bb
 				width: 300px;
 				height: 38px;
 				float: right;
@@ -612,7 +636,10 @@
 					margin: 0 7px;
 					float: left;
 					text-align: center;
+<<<<<<< HEAD
 					cursor: pointer;
+=======
+>>>>>>> be255ba55f6fa288cae1aa0629f3da4f6e2b94bb
 					img{
 						width: 70px;
 					}

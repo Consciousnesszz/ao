@@ -5,11 +5,15 @@
 			$(".subnav-wrap").hide();
 		}else{
 			$(".subnav-wrap").show();
+<<<<<<< HEAD
 			$(".subnav-wrap").css("left", parseInt($(".header").css("marginLeft")));
+=======
+>>>>>>> be255ba55f6fa288cae1aa0629f3da4f6e2b94bb
 		}
 	});
 	
 	/*---------banner导航----------*/
+<<<<<<< HEAD
 	var setTimer = null;
 	function showhide(ele1, ele2){
 		$(ele1).hover(function(){
@@ -32,6 +36,38 @@
 	showhide("#food", "#forfood");
 	showhide("#bag", "#forbag");
 	showhide("#car", "#forcar");
+=======
+	$("#baby").hover(function(){
+		$("#forbaby").show();
+	},function(){
+		$("#forbaby").hide();
+	})
+	$("#makeup").hover(function(){
+		$("#formakeup").show();
+	},function(){
+		$("#formakeup").hide();
+	})
+	$("#home").hover(function(){
+		$("#forhome").show();
+	},function(){
+		$("#forhome").hide();
+	})
+	$("#food").hover(function(){
+		$("#forfood").show();
+	},function(){
+		$("#forfood").hide();
+	})
+	$("#bag").hover(function(){
+		$("#forbag").show();
+	},function(){
+		$("#forbag").hide();
+	})
+	$("#car").hover(function(){
+		$("#forcar").show();
+	},function(){
+		$("#forcar").hide();
+	})
+>>>>>>> be255ba55f6fa288cae1aa0629f3da4f6e2b94bb
 
 	/*-------------everydaynav---------------*/
 	$("#everydaynav li").hover(function(e){

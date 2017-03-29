@@ -1,6 +1,24 @@
+<<<<<<< HEAD
 ;$(function(){
 	
 	$(".addr-wrap .addr").click(function(){
+=======
+$(function(){
+	/*-------welcome-------*/
+	if ($.cookie("username")) {
+		$(".welcome").hide();
+		$(".hello span").text("欢迎你，" + $.cookie("username"));
+		$(".hello").show();
+	}
+	$("#exit").click(function(){
+		$.cookie("username", null, { path: '/', expires: 10});
+		$(".hello").hide();
+		$(".welcome").show();
+	})
+
+
+	$("#addr").click(function(){
+>>>>>>> be255ba55f6fa288cae1aa0629f3da4f6e2b94bb
 		/*------------style----------*/
 		$(this).css({
 			'border-bottom' : "none",
