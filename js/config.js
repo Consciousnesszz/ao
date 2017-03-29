@@ -1,12 +1,40 @@
 ;$(function(){
-	
-	$(".addr-wrap .addr").click(function(){
+	/*----------amount-----------*/
+	var num = parseInt($.cookie("username").split("?")[1]);
+	$(".amount").text(num);
+	$(".rleft .red").text(num);
+
+	/*----------price-----------*/
+	var price = parseFloat($(".price").text().slice(1));
+	$(".count p").text("￥" + (price * num).toFixed(2));
+
+	/*----------tax-----------*/
+	var tax = parseFloat($(".tax").text().slice(1));
+	$(".showtax .right span").text("￥" + (tax * num).toFixed(2));
+
+	----------count-----------
+	$(".total .right span").text("￥" + ((price + tax) * num).toFixed(2));
+	$("rright").text("￥" + price * num);
+	$(".totaltax").text("￥" + (tax * num).toFixed(2));
+	$(".countall").text("￥" + ((price + tax) * num).toFixed(2));
+
+	/*------------referee-------------*/
+	$("#addre").click(function(){
+		if ($(".referee").css("display") === "none") {
+			$(".referee").show();
+		}else{
+			$(".referee").hide();
+		}
+	})
+
+	/*------------addr-------------*/
+	$(".addr-wrap2 .addr").click(function(){
 		/*------------style----------*/
 		$(this).css({
 			'border-bottom' : "none",
 			'padding-bottom' : "1px"
 		});
-		$(".addr-select").css("display","block");
+		$(".addr-wrap2 .addr-select").css("display","block");
 		$(".cinfo0").parent().css({
 			"color":"#000",
 			"background":"#fff",
@@ -165,20 +193,40 @@
 
 				/*-----------更新地址栏-----------*/
 				function update(){
-					$(".addr-select").css("display", "none");
+					$(".addr-wrap2 .addr-select").css("display", "none");
 					$(".info0").text($(".cinfo0").text());
 					$(".info1").text($(".cinfo1").text());
 					$(".info2").text($(".cinfo2").text());
 				}
 			})
 		},"json")
+
 	})
-	$(".addr-wrap .close").click(function(){
-		$(".addr-wrap .addr").css({
+	$(".close2").click(function(){
+		$(".addr-wrap2 .addr").css({
 			'border-bottom' : "1px solid #ddd",
 			'padding-bottom' : "0"
 		});
-		$(".addr-wrap .addr-select").css("display","none");
+		$(".addr-wrap2 .addr-select").css("display","none");
 	})
 
+	$("#add").click(function(){
+		$(".window").show();
+	})
+	$("#cancel").click(function(){
+		$(".addr-wrap2 .addr").css({
+			'border-bottom' : "1px solid #ddd",
+			'padding-bottom' : "0"
+		});
+		$(".addr-wrap2 .addr-select").css("display","none");
+		$(".window").hide();
+	})
+	$("#cwindow").click(function(){
+		$(".addr-wrap2 .addr").css({
+			'border-bottom' : "1px solid #ddd",
+			'padding-bottom' : "0"
+		});
+		$(".addr-wrap2 .addr-select").css("display","none");
+		$(".window").hide();
+	})
 })

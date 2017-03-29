@@ -16,18 +16,19 @@
 		<div class="headerg">
 			<div class="box">
 				<div class="left">
-					<span>您好，</span>
-					<span id="account">dadfda</span>
-					<a href="#" class="orange">退出</a>
+					<div class="hello">
+						<span>欢迎你</span>
+						<a href="javascript:;" class="orange" id="exit">退出登录</a>
+					</div>
 					<div class="addr-wrap">
 						<span>配送至</span>
-						<div id="addr">
+						<div class="addr">
 							<span class="info0">四川</span>
 							<span class="info1">成都</span>
 							<span class="info2">锦江区</span>
 						</div>
 						<i class="icon iconfont icon-xiala"></i>
-						<div id="addr-select">
+						<div class="addr-select">
 							<span class="close">x</span>
 							<ul class="piecenav">
 								<li><span class="cinfo0">四川</span><i class="icon iconfont icon-xiala"></i></li>
@@ -69,6 +70,57 @@
 			<div class="receiver">
 				<h3>收货人信息</h3>
 				<a href="javascript:;" id="add">+使用新地址</a>
+			</div>
+			<div class="window">
+				<div class="white">
+					<p>新增地址<i id="cwindow">x</i></p>
+					<div class="setname">
+						<span class="require">*</span>
+						<span class="label">收货人</span>
+						<input type="text" placeholder="限20个字">
+					</div>
+					<div class="setaddr">
+						<span class="require">*</span>
+						<span class="label">收货地址</span>
+						<div class="addr-wrap2">
+							<div class="addr">
+								<span class="info0">四川</span>
+								<span class="info1">成都</span>
+								<span class="info2">锦江区</span>
+							</div>
+							<i class="icon iconfont icon-xiala"></i>
+							<div class="addr-select">
+								<span class="close2">x</span>
+								<ul class="piecenav">
+									<li><span class="cinfo0">四川</span><i class="icon iconfont icon-xiala"></i></li>
+									<li><span class="cinfo1">成都</span><i class="icon iconfont icon-xiala"></i></li>
+									<li><span class="cinfo2">锦江区</span><i class="icon iconfont icon-xiala"></i></li>
+								</ul>
+								<ol class="addr-options0">abc</ol>
+								<ol class="addr-options1">aaa</ol>
+								<ol class="addr-options2">ddd</ol>
+							</div>
+						</div>
+					</div>
+					<div class="setstreet">
+						<span class="require">*</span>
+						<span class="label">详细地址</span>
+						<input type="text" placeholder="限20个字">
+					</div>
+					<div class="setphone">
+						<span class="require">*</span>
+						<span class="label">手机</span>
+						<input type="text">
+					</div>
+					<div class="setstable">
+						<span class="label">固定电话</span>
+						<input type="text">
+					</div>
+					<div class="submit">
+						<a href="javascript:;" id="submit">确定</a>
+						<a href="javascript:;" id="cancel">取消</a>
+					</div>
+				</div>
 			</div>
 			<div class="identify">
 				<div class="title">
@@ -174,8 +226,8 @@
 				</div>
 				<div class="infobottom">
 					<div class="left">
-						<a href="javascript:;">+添加推荐人信息</a>
-						<div class="referee">
+						<a href="javascript:;" id="addre">+添加推荐人信息</a>
+						<div class="referee" style="display: none">
 							<span>推荐人</span>
 							<input type="text" placeholder="数字英文下划线或中文">
 							<span>(非必填项)</span>
@@ -257,6 +309,9 @@
 	</div>
 	
 	<script type="text/javascript" src="../js/tools/jquery.js"></script>
+	<script type="text/javascript" src="../js/tools/jquery-cookie.js"></script>
 	<script type="text/javascript" src="../js/addr.js"></script>
+	<!--<script type="text/javascript" src="../js/account.js"></script>-->
+	<script type="text/javascript" src="../js/config.js"></script>
 </body>
 </html>

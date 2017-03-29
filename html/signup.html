@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>login</title>
+	<title>signup</title>
 	<link rel="stylesheet" type="text/css" href="../css/base.css">
 	<link rel="stylesheet" type="text/css" href="../css/loginbase.css">
+	<link rel="stylesheet" type="text/css" href="../css/login/iconfont.css">
 	<link rel="stylesheet" type="text/css" href="../css/signup.css">
-	<link rel="stylesheet" href="../css/login/iconfont.css">
 </head>
 <body>
 	<div class="container">
@@ -15,33 +15,58 @@
 			<div id="helper">
 				<ul>
 					<li><span>已有账号?</span></li>
-					<li><a href="#">立即登录</a></li>
+					<li><a href="login.html">立即登录</a></li>
 					<li><a href="#">帮助中心</a></li>
 				</ul>
 			</div>
 		</div>
 		<form>
-			<div>
-				<input type="text" placeholder="手机号码"><i class="iconfont">&#xe63f;</i>
+			<div id="phone">
+				<input type="text" placeholder="电话号码/个性账号/邮箱"><i class="iconfont icon-ren"></i>
+				<span class="notice"><i>x</i>请输入至少6个字符</span>
 			</div>
-			<div>
-				<input type="password" placeholder="密码由6-20个数字和字母的组合"><i class="iconfont">&#xe626;</i>
+			<div id="pass">
+				<input type="password" placeholder="密码由6-20个数字和字母的组合"><i class="iconfont icon-suo"></i>
+				<span class="notice"><i>x</i>密码最少为6个字符</span>
 			</div>
-			<div>
+			<div id="hide">
+				<div id="spass">
+					<input type="password" placeholder="再次输入密码"><i class="iconfont icon-suo"></i>
+					<span class="notice"><i>x</i>输入的密码不一致</span>
+				</div>
+				<div id="email">
+					<input type="text" placeholder="请填写常用邮箱地址"><i class="iconfont icon-ren"></i>
+					<span class="notice"><i>x</i>请输入有效的电子邮件</span>
+				</div>
+				<div id="idcode">
+					<input type="text" placeholder="验证码"><i class="iconfont icon-suo"></i>
+					<span class="foridcode">1234</span>
+					<span class="gray">看不清楚?</span>
+					<a href="javascript:;" id="change">换一个</a>
+				</div>
+				<div id="checkemail">
+					<input type="text" placeholder="邮箱验证码"><i class="iconfont  icon-suo"></i><a href="javascript:;">获取邮箱验证码</a>
+				</div>
+			</div>
+			<div id="agree">
 				<a href="#">会员注册协议</a>
 			</div>
-			<div>
+			<div id="sub">
 				<input type="submit" value="同意协议并注册" id="btn">
 			</div>
 		</form>
 		<div id="bottom">
 			<ul>
-				<li><a href="#">关于奥买家</a></li>
-				<li><a href="#">诚聘英才</a></li>
-				<li><a href="#">联系我们</a></li>
+				<li><a href="../index.html">关于奥买家</a></li>
+				<li><a href="../index.html">诚聘英才</a></li>
+				<li><a href="../index.html">联系我们</a></li>
 			</ul>
 			<p>粤ICP备15091122号-1|Copyright© 奥买家 2013-2016，All Rights Reserved</p>
 		</div>
 	</div>
+
+	<script type="text/javascript" src="../js/tools/jquery.js"></script>
+	<script type="text/javascript" src="../js/tools/jquery-cookie.js"></script>
+	<script type="text/javascript" src="../js/signup.js"></script>
 </body>
 </html>

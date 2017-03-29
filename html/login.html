@@ -26,35 +26,66 @@
 			<div class="pos">
 				<form>
 					<div class="title">
-						<a href="javascript:;">账号登录</a>
-						<a href="javascript:;">手机动态码登录</a>
+						<a href="javascript:;" id="account">账号登录</a>
+						<a href="javascript:;" id="phone">手机动态码登录</a>
+						<i></i>
 					</div>
-					<div class="inp">
-						<input type="text" placeholder="手机号码/邮箱/用户名"><i class="iconfont icon-ren"></i>
-					</div>
-					<div class="inp">
-						<input type="password" placeholder="登录密码"><i class="iconfont icon-suo"></i>
-					</div>
-					<div class="options">
-						<div class="left">
-							<input type="checkbox">
-							<span>2周内自动登录</span>
+					<div class="hide">
+						<div class="first">
+							<div class="inp account">
+								<input type="text" placeholder="手机号码/邮箱/用户名"><i class="iconfont icon-ren"></i>
+								<span class="notice"><b>x</b>请输入用户名</span>
+							</div>
+							<div class="inp password">
+								<input type="password" placeholder="登录密码"><i class="iconfont icon-suo"></i>
+								<span class="notice"><b>x</b>请输入密码</span>
+							</div>
+							<div class="options">
+								<div class="left">
+									<input type="checkbox">
+									<span>2周内自动登录</span>
+								</div>
+								<div class="right">
+									<a href="#">忘记密码?</a>
+								</div>
+							</div>
+							<div class="inp btn">
+								<input type="submit" value="登录" id="btn">
+							</div>
+							<div class="others">
+								<p>直接使用以下账号登录</p>
+								<div>
+									<a href="#"><i class="iconfont icon-qq"></i></a>
+									<a href="#"><i class="iconfont icon-weixin"></i></a>
+									<a href="#"><i class="iconfont icon-zhifubao"></i></a>
+									<a href="#"><i class="iconfont icon-weibo"></i></a>
+								</div>
+							</div>
 						</div>
-						<div class="right">
-							<a href="#">忘记密码?</a>
+						<div class="second">
+							<div class="inp phone">
+								<input type="text" placeholder="请输入手机号码"><i class="iconfont icon-ren"></i>
+								<span class="notice"><b>x</b>请输入正确的电话号码</span>
+							</div>
+							<div class="inp idcode">
+								<input type="password" placeholder="短信动态验证码"><i class="iconfont icon-suo"></i>
+								<a href="javascript:;">获取短信验证码</a>
+							</div>
+							<div class="inp btn">
+								<input type="submit" value="登录" id="btn2">
+							</div>
+							<p>注意：未注册过奥买家的手机号在首次登录时将自动完成注册，使用该登录方式代表您已接受<a href="javascript:;">《会员注册协议》</a></p>
+							<div class="others">
+								<p>直接使用以下账号登录</p>
+								<div>
+									<a href="#"><i class="iconfont icon-qq"></i></a>
+									<a href="#"><i class="iconfont icon-weixin"></i></a>
+									<a href="#"><i class="iconfont icon-zhifubao"></i></a>
+									<a href="#"><i class="iconfont icon-weibo"></i></a>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="inp btn">
-						<input type="submit" value="登录" id="btn">
-					</div>
-					<div class="others">
-						<p>直接使用以下账号登录</p>
-						<div>
-							<a href="#"><i class="iconfont icon-qq"></i></a>
-							<a href="#"><i class="iconfont icon-weixin"></i></a>
-							<a href="#"><i class="iconfont icon-zhifubao"></i></a>
-							<a href="#"><i class="iconfont icon-weibo"></i></a>
-						</div>
 				</form>
 			</div>
 		</div>
@@ -67,5 +98,8 @@
 			<p>粤ICP备15091122号-1|Copyright© 奥买家 2013-2016，All Rights Reserved</p>
 		</div>
 	</div>
+	<script type="text/javascript" src="../js/tools/jquery.js"></script>
+	<script type="text/javascript" src="../js/tools/jquery-cookie.js"></script>
+	<script type="text/javascript" src="../js/login.js"></script>
 </body>
 </html>
