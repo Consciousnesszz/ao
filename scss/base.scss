@@ -75,6 +75,13 @@ input, textarea, select {
                 height:100%;
                 float:left;
                 line-height:35px;
+                .welcome{
+                    float: left;
+                }
+                .hello{
+                    float: left;
+                    display: none;
+                }
                 .orange{
                     color:$baseColor;
                     margin-left: 12px;

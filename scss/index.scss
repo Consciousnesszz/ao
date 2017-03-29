@@ -23,33 +23,34 @@
             opacity: 1;
         }
     }
+    > ol{
+        width: 200px;
+        height: 20px;
+        position: absolute;
+        bottom: 30px;
+        left: 600px;
+        z-index: 2;
+        li{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            float: left;
+            margin-right: 20px;
+            background: rgba(255,255,255,0.6);
+            &:hover{
+                background: rgba(255,255,255,1);
+            }
+        }
+        li:first-of-type{
+            background: rgba(255,255,255,1);
+        }
+    }
     .subnav-wrap{
         width: 1200px;
         height: 100%;
         margin: 0 auto;
         position: relative;
-        > ol{
-            width: 200px;
-            height: 20px;
-            position: absolute;
-            bottom: 30px;
-            left: 500px;
-            z-index: 2;
-            li{
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                float: left;
-                margin-right: 20px;
-                background: rgba(255,255,255,0.6);
-                &:hover{
-                    background: rgba(255,255,255,1);
-                }
-            }
-            li:first-of-type{
-                background: rgba(255,255,255,1);
-            }
-        }
+        
     }
     #subnav{
         height: 100%;
@@ -493,95 +494,153 @@
             }
         }
     
-        /*------------baby----------*/
-        .baby{
+        /*------------babycontent----------*/
+        
+        .babycontent{
+            margin-top: 14px;
             width: 100%;
-            height: 600px;
-            overflow: hidden;
-            #babycontent{
-                margin-top: 14px;
-                width: 100%;
-                height: 500px;
-                .left{
+            height: 500px;
+            .left{
+                width: 220px;
+                height: 100%;
+                float: left;
+                .first{
+                    display: block;
                     width: 220px;
-                    height: 100%;
-                    float: left;
-                    .first{
-                        display: block;
+                    height: 376px;
+                    overflow: hidden;
+                    img{
                         width: 220px;
-                        height: 376px;
-                        overflow: hidden;
-                        img{
-                            width: 220px;
-                            transition:0.3s;
-                        }
-                        img:hover{
-                            width: 250px;
-                            margin-top: -15px;
-                            margin-left: -15px;
-                        }
-                    }
-                    ul{
-                        width: 100%;
-                        height: 124px;
-                        background: #e7e5e5;
-                        li{
-                            width: 50%;
-                            height: 25%;
-                            float: left;
-                            line-height: 31px;
-                            text-align: center;
-                            color: #666;
-                        }
-                    }
-                }
-                .center{
-                    width: 540px;
-                    height: 460px;
-                    background: #fff;
-                    padding: 20px;
-                    float: left;
-                    img{
-                        width: 146px;
-                        height: 146px;
-                    }
-                    dl{
-                        width: 270px;
-                        height: 230px;
-                        float: left;
-                    }
-                    dl:nth-of-type(add){
-                        border-right: 1px dotted #aaa;
-                    }
-                }
-                .right{
-                    width: 400px;
-                    height: 100%;
-                    float: left;
-                    position: relative;
-                    i{
-                        width: 73px;
-                        height: 61px;
-                        display: block;
-                        position: absolute;
-                        top: -8px;
-                        right: 18px;
-                        background: url(../images/spirit/icon.png);
-                        background-position: -155px 0;
-                        z-index: 1;
-                    }
-                    a{
-                        display: block;
-                        overflow: hidden;
-                    }
-                    img{
                         transition:0.3s;
-                        &:hover{
-                            transform:scale(1.1,1.1);
-                        }
+                    }
+                    img:hover{
+                        width: 250px;
+                        margin-top: -15px;
+                        margin-left: -15px;
+                    }
+                }
+                ul{
+                    width: 100%;
+                    height: 124px;
+                    background: #e7e5e5;
+                    li{
+                        width: 50%;
+                        height: 25%;
+                        float: left;
+                        line-height: 31px;
+                        text-align: center;
+                        color: #666;
                     }
                 }
             }
+            .center{
+                width: 540px;
+                height: 460px;
+                background: #fff;
+                padding: 20px;
+                float: left;
+                img{
+                    width: 146px;
+                    height: 146px;
+                }
+                dl{
+                    width: 269px;
+                    height: 230px;
+                    float: left;
+                    dt{
+                        padding-top: 16px;
+                        position: relative;
+                        transition:0.3s;
+                        span{
+                            display: block;
+                            position: absolute;
+                            width: 100px;
+                            height: 20px;
+                            top: 16px;
+                            left: 20px;
+                            i{
+                                display: inline-block;
+                                width: 16px;
+                                height: 11px;
+                                margin-right: 3px;
+                                background: url(../images/spirit/icon_s_flag.png);
+                            }
+                        }
+                        img{
+                            margin-left: 50px;
+                        }
+                        &:hover{
+                            margin-left: -10px;
+                        }
+                    }
+                    dd{
+                        margin-left: 20px;
+                        p{
+                            width: 209px;
+                            height: 16px;
+                            padding-top: 12px;
+                            text-overflow:ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            font-size: 12px;
+                            a{
+                                color: #aaa;
+                            }
+                        }
+                        .pricenow{
+                            color: #ff442e;
+                            font-size: 18px;
+                        }
+                        .pricebefore{
+                            text-decoration: line-through;
+                            font-size: 11px;
+                            color: #aaa;
+                        }
+                    }
+                }
+                dl:first-of-type, dl:nth-of-type(2){
+                    border-bottom: 1px dotted #aaa;
+                }
+                dl:nth-of-type(odd){
+                    border-right: 1px dotted #aaa;
+                    i{
+                        background-position: 0 -33px;
+                    }
+                }
+            }
+            .right{
+                width: 400px;
+                height: 100%;
+                float: left;
+                position: relative;
+                i{
+                    width: 73px;
+                    height: 61px;
+                    display: block;
+                    position: absolute;
+                    top: -8px;
+                    right: 18px;
+                    background: url(../images/spirit/icon.png);
+                    background-position: -155px 0;
+                    z-index: 1;
+                }
+                a{
+                    display: block;
+                    overflow: hidden;
+                }
+                img{
+                    transition:0.3s;
+                    &:hover{
+                        transform:scale(1.1,1.1);
+                    }
+                }
+            }
+        }
+        /*------------floor-------------*/
+        .baby, .mother, .beauty, .perfume, .personal, .bag, .diamond, .food{
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
         }
     }
 }

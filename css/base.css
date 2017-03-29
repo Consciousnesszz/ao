@@ -71,6 +71,11 @@ input, textarea, select {
       height: 100%;
       float: left;
       line-height: 35px; }
+      #header-wrap .headerg .box .left .welcome {
+        float: left; }
+      #header-wrap .headerg .box .left .hello {
+        float: left;
+        display: none; }
       #header-wrap .headerg .box .left .orange {
         color: #ff432e;
         margin-left: 12px; }

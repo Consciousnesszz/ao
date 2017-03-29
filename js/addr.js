@@ -1,4 +1,17 @@
 $(function(){
+	/*-------welcome-------*/
+	if ($.cookie("username")) {
+		$(".welcome").hide();
+		$(".hello span").text("欢迎你，" + $.cookie("username"));
+		$(".hello").show();
+	}
+	$("#exit").click(function(){
+		$.cookie("username", null, { path: '/', expires: 10});
+		$(".hello").hide();
+		$(".welcome").show();
+	})
+
+
 	$("#addr").click(function(){
 		/*------------style----------*/
 		$(this).css({
