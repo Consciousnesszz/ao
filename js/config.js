@@ -12,7 +12,7 @@
 	var tax = parseFloat($(".tax").text().slice(1));
 	$(".showtax .right span").text("￥" + (tax * num).toFixed(2));
 
-	----------count-----------
+	/*----------count-----------*/
 	$(".total .right span").text("￥" + ((price + tax) * num).toFixed(2));
 	$("rright").text("￥" + price * num);
 	$(".totaltax").text("￥" + (tax * num).toFixed(2));

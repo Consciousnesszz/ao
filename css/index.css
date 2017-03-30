@@ -136,6 +136,7 @@
     width: 1200px;
     margin: 0 auto;
     /*------------hot----------*/
+    /*------------daily----------*/
     /*------------brand----------*/
     /*------------babycontent----------*/
     /*------------floor-------------*/ }
@@ -331,6 +332,131 @@
           width: 252px;
           margin-top: -15px;
           margin-left: -15px; }
+    .products-wrap #products .daily {
+      width: 100%;
+      height: 500px;
+      overflow: hidden; }
+      .products-wrap #products .daily .title {
+        width: 250px;
+        height: 38px;
+        margin: 10px auto; }
+        .products-wrap #products .daily .title i {
+          display: inline-block;
+          width: 85px;
+          height: 30px;
+          background: url(../images/spirit/icon.png);
+          background-position: -66px -361px;
+          vertical-align: middle; }
+        .products-wrap #products .daily .title span {
+          display: inline-block;
+          height: 38px;
+          width: 38px;
+          line-height: 38px;
+          margin: 0 5px;
+          text-align: center;
+          font-size: 25px;
+          color: #000;
+          background: #fff;
+          vertical-align: middle; }
+      .products-wrap #products .daily .innerhot {
+        width: 594px;
+        height: 247px;
+        margin-top: 12px;
+        background: #fff;
+        float: left; }
+        .products-wrap #products .daily .innerhot .left {
+          width: 232px;
+          height: 232px;
+          float: left;
+          padding: 6px;
+          overflow: hidden; }
+          .products-wrap #products .daily .innerhot .left img {
+            width: 232px;
+            transition: 0.3s; }
+        .products-wrap #products .daily .innerhot .right {
+          width: 308px;
+          height: 225px;
+          padding: 6px 16px;
+          float: right; }
+          .products-wrap #products .daily .innerhot .right .tag {
+            height: 42px; }
+            .products-wrap #products .daily .innerhot .right .tag img {
+              vertical-align: middle; }
+            .products-wrap #products .daily .innerhot .right .tag span {
+              display: inline-block;
+              vertical-align: middle;
+              margin-left: 9px;
+              color: #7c7c7c; }
+          .products-wrap #products .daily .innerhot .right h5 {
+            width: 100%;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            height: 30px;
+            line-height: 30px;
+            border-bottom: 1px dotted #eee;
+            color: #000;
+            font-size: 11px; }
+          .products-wrap #products .daily .innerhot .right .description {
+            font-size: 11px;
+            line-height: 18px;
+            color: #999; }
+          .products-wrap #products .daily .innerhot .right .sellamount {
+            display: block;
+            width: 86px;
+            height: 22px;
+            background: #ff442e;
+            color: #fff;
+            line-height: 22px;
+            text-align: center;
+            font-size: 11px;
+            border-radius: 2px;
+            position: relative; }
+            .products-wrap #products .daily .innerhot .right .sellamount i {
+              display: inline-block;
+              width: 0px;
+              height: 0px;
+              border: 11px solid transparent;
+              border-left-color: #ff442e;
+              position: absolute;
+              right: -21px;
+              top: 0; }
+          .products-wrap #products .daily .innerhot .right .price {
+            width: 100%;
+            height: 45px; }
+            .products-wrap #products .daily .innerhot .right .price .pricenow {
+              display: inline-block;
+              color: #ff442e;
+              font-size: 16px;
+              vertical-align: bottom; }
+            .products-wrap #products .daily .innerhot .right .price .priceold {
+              display: inline-block;
+              color: #999;
+              font-size: 11px;
+              margin-left: 10px;
+              text-decoration: line-through;
+              vertical-align: bottom;
+              padding-bottom: 2px; }
+            .products-wrap #products .daily .innerhot .right .price a {
+              float: right;
+              display: block;
+              width: 83px;
+              height: 25px;
+              border: 1px solid #ff442e;
+              border-radius: 2px;
+              text-align: center;
+              line-height: 25px;
+              color: #ff442e;
+              margin-top: 18px; }
+            .products-wrap #products .daily .innerhot .right .price b {
+              height: 45px;
+              display: inline-block; }
+        .products-wrap #products .daily .innerhot:nth-of-type(even) {
+          margin-left: 10px; }
+      .products-wrap #products .daily .innerhot:hover .left img {
+        width: 252px;
+        margin-top: -15px;
+        margin-left: -15px; }
     .products-wrap #products .brand {
       width: 100%;
       height: 850px; }
@@ -517,15 +643,15 @@
       width: 100%;
       height: 600px;
       overflow: hidden; }
-<<<<<<< HEAD
 
 /*-------------floors--------------*/
 #floors {
   width: 40px;
-  height: 450px;
+  height: 490px;
   position: fixed;
   top: 120px;
-  left: 10px;
+  left: -50px;
+  opacity: 0;
   z-index: 7;
   border: 1px solid #ddd;
   border-radius: 2px;
@@ -543,5 +669,3 @@
     #floors ul .hcurr {
       color: #fff;
       background: #ff442e; }
-=======
->>>>>>> be255ba55f6fa288cae1aa0629f3da4f6e2b94bb

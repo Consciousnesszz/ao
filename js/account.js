@@ -27,7 +27,25 @@
 		if ($.cookie("username") == "null") {
 			alert("你还没有登录哟");
 		}else{
-			window.location.href = "html/car.html";
+			var loc = "car.html"
+			var xml = new XMLHttpRequest();
+			xml.open("GET",loc,false);
+			xml.send();
+			if (xml.status === 404) {
+				window.location.href = "html/car.html";
+			}else{
+				window.location.href = loc;
+			}
 		}
+	})
+
+	/*-------------precenter-----------------*/
+
+	$(".percenter").hover(function(){
+		$(".percenter").css("background", "#fff");
+		$(".perhide").slideDown(300);
+	},function(){
+		$(".percenter").css("background", "#f5f5f5");
+		$(".perhide").slideUp(300);
 	})
 })

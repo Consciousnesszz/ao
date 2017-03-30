@@ -1,14 +1,10 @@
 ;$(function(){
-<<<<<<< HEAD
 	/*-----------glass-------------*/
-=======
->>>>>>> be255ba55f6fa288cae1aa0629f3da4f6e2b94bb
 	$(".big").mouseenter(function(e){
 		e = e || event;
 
 		$("#move").show();
 		$(".seebig").show();
-<<<<<<< HEAD
 
 		var _left = e.pageX - $("#move").offset().left - $("#move").width() / 2,
 			_top = e.pageY - $("#move").offset().top - $("#move").height() / 2;
@@ -34,34 +30,6 @@
 
 			var mL = e.pageX - $(".big").offset().left - $("#move").width() / 2,
 				mT = e.pageY - $(".big").offset().top - $("#move").height() / 2;
-=======
-		////////////////////////////////////
-		var inleft = 0, intop = 0;
-		if (e.clientX < $(".big").offset().left + $("#move").width() / 2) {
-			inleft = 0;
-		}else if(e.clientX > $(".big").offset().left + $(".big").width() - $("#move").width() / 2){
-			inleft = $(".big").offset().left + $(".big").width() - $("#move").width() / 2;
-		}
-		if (e.clientY < $(".big").offset().top + $("#move").height() / 2) {
-			intop = 0;
-		}else if(e.clientY > $(".big").offset().top + $(".big").height() - $("#move").height() / 2){
-			intop = $(".big").offset().top + $(".big").height() - $("#move").height() / 2;
-		}
-		
-		$("#move").css({
-			top : intop + "px",
-			left : inleft + "px"
-		});
-
-		var _left = e.pageX - $("#move").offset().left,
-			_top = e.pageY - $("#move").offset().top;
-
-		$(".big").mousemove(function(e){
-			e = e || event;
-
-			var mL = e.pageX - _left - $(".big").offset().left,
-				mT = e.pageY - _top - $(".big").offset().top;
->>>>>>> be255ba55f6fa288cae1aa0629f3da4f6e2b94bb
 
 			if (mL <= 0) {
 				mL = 0;
@@ -94,7 +62,6 @@
 			$(".seebig").hide();
 		})
 	})
-<<<<<<< HEAD
 
 	/*----------change pic------------*/
 	$("#prev").click(function(){
@@ -258,6 +225,4 @@
 			$(".pic").css("marginTop", "0");
 		}
 	})
-=======
->>>>>>> be255ba55f6fa288cae1aa0629f3da4f6e2b94bb
 })
