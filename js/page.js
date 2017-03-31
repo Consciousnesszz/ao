@@ -36,10 +36,13 @@
 			alert("你还没有登录哟");
 		}
 	})
+<<<<<<< HEAD
 
 	$(".change li").click(function(){
 		$(".change li").removeClass("curr");
 		$(this).addClass("curr");
 	})
 
+=======
+>>>>>>> a9a2d497f133e7022265ddfc635b98189962d9f5
 })

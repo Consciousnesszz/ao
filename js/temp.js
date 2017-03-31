@@ -1,5 +1,6 @@
 ;$(function(){
 	/*-----------hottemp--------------*/
+<<<<<<< HEAD
 	var product1 = {
 		img : '1.jpeg',
 		title : 'FURLA/芙拉 2017年新款杨紫同款 女士牛皮时尚单肩斜挎链条包',
@@ -77,6 +78,14 @@
 	var html = template('hottem', data);
 	$("#hotcontent").html(html);
 	
+=======
+	var html = template('test');
+	$("#hotcontent").html(html);
+	for(var i = 0; i < 9; i++){
+		$("#hotcontent").append($($(".innerhot")[0]).clone());
+	};
+
+>>>>>>> a9a2d497f133e7022265ddfc635b98189962d9f5
 	/*-----------floottemp----------------*/
 
 	var motherfill = false,
@@ -118,6 +127,7 @@
 			foodfill = true;
 		}
 	})
+<<<<<<< HEAD
 
 	/*--------------floors--------------*/
 	var isMoving = false;
@@ -231,4 +241,6 @@
 			}
 		}
 	},1000);
+=======
+>>>>>>> a9a2d497f133e7022265ddfc635b98189962d9f5
 });

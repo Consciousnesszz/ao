@@ -12,7 +12,11 @@
 	var tax = parseFloat($(".tax").text().slice(1));
 	$(".showtax .right span").text("￥" + (tax * num).toFixed(2));
 
+<<<<<<< HEAD
 	----------count-----------
+=======
+	/*----------count-----------*/
+>>>>>>> a9a2d497f133e7022265ddfc635b98189962d9f5
 	$(".total .right span").text("￥" + ((price + tax) * num).toFixed(2));
 	$("rright").text("￥" + price * num);
 	$(".totaltax").text("￥" + (tax * num).toFixed(2));
@@ -126,6 +130,10 @@
 					}
 					area[city[clientCity][j].name] = city[clientCity][j].sub;
 				}
+<<<<<<< HEAD
+=======
+				console.log(area);
+>>>>>>> a9a2d497f133e7022265ddfc635b98189962d9f5
 				if (area[city[clientCity][1].name] === undefined) {
 					$(".cinfo1").parent().css("display", "block");
 					$(".cinfo1").text(clientCity + "市");
@@ -193,12 +201,18 @@
 				/*-----------更新地址栏-----------*/
 				function update(){
 					$(".addr-wrap2 .addr-select").css("display", "none");
+<<<<<<< HEAD
 					$(".info0").text($($(".cinfo0")[1]).text());
 					$(".info1").text($($(".cinfo1")[1]).text());
 					$(".info2").text($($(".cinfo2")[1]).text());
 					$(".info02").text($($(".cinfo0")[1]).text());
 					$(".info12").text($($(".cinfo1")[1]).text());
 					$(".info22").text($($(".cinfo2")[1]).text());
+=======
+					$(".info0").text($(".cinfo0").text());
+					$(".info1").text($(".cinfo1").text());
+					$(".info2").text($(".cinfo2").text());
+>>>>>>> a9a2d497f133e7022265ddfc635b98189962d9f5
 				}
 			})
 		},"json")
@@ -231,6 +245,7 @@
 		$(".addr-wrap2 .addr-select").css("display","none");
 		$(".window").hide();
 	})
+<<<<<<< HEAD
 	$("#submit").click(function(){
 		var name = $(".setname input").val();
 		var addr = $(".info0").text() + " " + $(".info1").text() + " " + $(".info2").text();
@@ -256,4 +271,6 @@
 	$("#infodef").click(function(){
 		
 	})
+=======
+>>>>>>> a9a2d497f133e7022265ddfc635b98189962d9f5
 })

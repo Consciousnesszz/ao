@@ -275,8 +275,11 @@
             .products-wrap #products .hot #hotcontent .innerhot .right .description {
               font-size: 11px;
               line-height: 18px;
+<<<<<<< HEAD
               height: 72px;
               overflow: hidden;
+=======
+>>>>>>> a9a2d497f133e7022265ddfc635b98189962d9f5
               color: #999; }
             .products-wrap #products .hot #hotcontent .innerhot .right .sellamount {
               display: block;

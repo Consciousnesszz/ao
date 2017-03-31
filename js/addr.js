@@ -68,7 +68,11 @@
 		}
 		
 		/*------------get----------*/
+<<<<<<< HEAD
 		$.get(loc,function(data){
+=======
+		$.get("../json/addr.json",function(data){
+>>>>>>> a9a2d497f133e7022265ddfc635b98189962d9f5
 			var htmlcity = "",
 				city = {},
 				area = {};
@@ -174,9 +178,15 @@
 				/*-----------更新地址栏-----------*/
 				function update(){
 					$(".addr-select").css("display", "none");
+<<<<<<< HEAD
 					$(".info0").text($($(".cinfo0")[0]).text());
 					$(".info1").text($($(".cinfo1")[0]).text());
 					$(".info2").text($($(".cinfo2")[0]).text());
+=======
+					$(".info0").text($(".cinfo0").text());
+					$(".info1").text($(".cinfo1").text());
+					$(".info2").text($(".cinfo2").text());
+>>>>>>> a9a2d497f133e7022265ddfc635b98189962d9f5
 				}
 			})
 		},"json")
