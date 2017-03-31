@@ -1,12 +1,40 @@
 ;$(function(){
-	
-	$(".addr-wrap .addr").click(function(){
+	/*----------amount-----------*/
+	var num = parseInt($.cookie("username").split("?")[1]);
+	$(".amount").text(num);
+	$(".rleft .red").text(num);
+
+	/*----------price-----------*/
+	var price = parseFloat($(".price").text().slice(1));
+	$(".count p").text("￥" + (price * num).toFixed(2));
+
+	/*----------tax-----------*/
+	var tax = parseFloat($(".tax").text().slice(1));
+	$(".showtax .right span").text("￥" + (tax * num).toFixed(2));
+
+	----------count-----------
+	$(".total .right span").text("￥" + ((price + tax) * num).toFixed(2));
+	$("rright").text("￥" + price * num);
+	$(".totaltax").text("￥" + (tax * num).toFixed(2));
+	$(".countall").text("￥" + ((price + tax) * num).toFixed(2));
+
+	/*------------referee-------------*/
+	$("#addre").click(function(){
+		if ($(".referee").css("display") === "none") {
+			$(".referee").show();
+		}else{
+			$(".referee").hide();
+		}
+	})
+
+	/*------------addr-------------*/
+	$(".addr-wrap2 .addr").click(function(){
 		/*------------style----------*/
 		$(this).css({
 			'border-bottom' : "none",
 			'padding-bottom' : "1px"
 		});
-		$(".addr-select").css("display","block");
+		$(".addr-wrap2 .addr-select").css("display","block");
 		$(".cinfo0").parent().css({
 			"color":"#000",
 			"background":"#fff",
@@ -58,17 +86,8 @@
 		})
 		
 		var  htmlpriv = "";
-
-		var loc = "../json/addr.json"
-		var xml = new XMLHttpRequest();
-		xml.open("GET",loc,false);
-		xml.send();
-		if (xml.status === 404) {
-			loc = "json/addr.json";
-		}
-		
 		/*------------get----------*/
-		$.get(loc,function(data){
+		$.get("../json/addr.json",function(data){
 			var htmlcity = "",
 				city = {},
 				area = {};
@@ -173,20 +192,68 @@
 
 				/*-----------更新地址栏-----------*/
 				function update(){
-					$(".addr-select").css("display", "none");
-					$(".info0").text($($(".cinfo0")[0]).text());
-					$(".info1").text($($(".cinfo1")[0]).text());
-					$(".info2").text($($(".cinfo2")[0]).text());
+					$(".addr-wrap2 .addr-select").css("display", "none");
+					$(".info0").text($($(".cinfo0")[1]).text());
+					$(".info1").text($($(".cinfo1")[1]).text());
+					$(".info2").text($($(".cinfo2")[1]).text());
+					$(".info02").text($($(".cinfo0")[1]).text());
+					$(".info12").text($($(".cinfo1")[1]).text());
+					$(".info22").text($($(".cinfo2")[1]).text());
 				}
 			})
 		},"json")
+
 	})
-	$(".addr-wrap .close").click(function(){
-		$(".addr-wrap .addr").css({
+	$(".close2").click(function(){
+		$(".addr-wrap2 .addr").css({
 			'border-bottom' : "1px solid #ddd",
 			'padding-bottom' : "0"
 		});
-		$(".addr-wrap .addr-select").css("display","none");
+		$(".addr-wrap2 .addr-select").css("display","none");
 	})
 
+	$("#add").click(function(){
+		$(".window").show();
+	})
+	$("#cancel").click(function(){
+		$(".addr-wrap2 .addr").css({
+			'border-bottom' : "1px solid #ddd",
+			'padding-bottom' : "0"
+		});
+		$(".addr-wrap2 .addr-select").css("display","none");
+		$(".window").hide();
+	})
+	$("#cwindow").click(function(){
+		$(".addr-wrap2 .addr").css({
+			'border-bottom' : "1px solid #ddd",
+			'padding-bottom' : "0"
+		});
+		$(".addr-wrap2 .addr-select").css("display","none");
+		$(".window").hide();
+	})
+	$("#submit").click(function(){
+		var name = $(".setname input").val();
+		var addr = $(".info0").text() + " " + $(".info1").text() + " " + $(".info2").text();
+		var home = $(".setstreet input").val();
+		var phone = $(".setphone input").val();
+		var stable = $(".setstable input").val();
+		$(".receiver").css("height", "238px");
+		$(".receiver a").hide();
+		$(".showinfo").show();
+		$(".infotop span").text(name);
+		$(".infocen").text(addr + " " + home);
+		$(".infobom").text(phone + " " + stable);
+		$(".window").hide();
+	})
+	$("#infoch").click(function(){
+		$(".window").show();
+	})
+	$("#infode").click(function(){
+		$(".receiver a").show();
+		$(".showinfo").hide();
+		$(".receiver").css("height", "138px");
+	})
+	$("#infodef").click(function(){
+		
+	})
 })

@@ -9,8 +9,8 @@
 .formwrap {
   width: 100%;
   height: 480px;
-  background: url(../images/lunbo/move1.jpeg);
-  background-position: -720px;
+  background: url(../images/lunbo/move1.jpeg) no-repeat;
+  background-position: -640px -20px;
   overflow: hidden; }
   .formwrap .pos {
     width: 992px;
@@ -22,11 +22,13 @@
       height: 390px;
       width: 350px;
       position: absolute;
-      right: 0; }
+      right: 0;
+      overflow: hidden; }
       .formwrap .pos form .title {
         width: 100%;
         height: 54px;
-        border-bottom: 1px solid #ddd; }
+        border-bottom: 1px solid #ddd;
+        position: relative; }
         .formwrap .pos form .title a {
           display: block;
           float: left;
@@ -36,8 +38,50 @@
           line-height: 54px;
           font-size: 16px;
           color: #999; }
+        .formwrap .pos form .title a:nth-of-type(1) {
+          color: #333;
+          border-bottom: 2px solid #ff224e; }
         .formwrap .pos form .title a:nth-of-type(2) {
           width: 115px; }
+      .formwrap .pos form .hide {
+        width: 700px;
+        height: 335px;
+        position: absolute;
+        top: 54px;
+        left: 0; }
+        .formwrap .pos form .hide .first {
+          width: 50%;
+          height: 335px;
+          float: left; }
+        .formwrap .pos form .hide .second {
+          width: 50%;
+          height: 335px;
+          float: left; }
+          .formwrap .pos form .hide .second .idcode input {
+            width: 192px; }
+          .formwrap .pos form .hide .second .idcode a {
+            display: block;
+            float: right;
+            width: 121px;
+            height: 40px;
+            background: #ffba00;
+            color: #fff;
+            line-height: 40px;
+            text-align: center; }
+          .formwrap .pos form .hide .second .btn {
+            margin-top: 30px; }
+          .formwrap .pos form .hide .second p {
+            width: 316px;
+            height: 32px;
+            margin: 20px auto;
+            font-size: 11px; }
+            .formwrap .pos form .hide .second p a {
+              color: #ff224e; }
+          .formwrap .pos form .hide .second .others {
+            margin-top: 15px; }
+            .formwrap .pos form .hide .second .others p {
+              height: 12px;
+              margin-bottom: 5px; }
       .formwrap .pos form .inp {
         width: 315px;
         height: 40px;
@@ -47,7 +91,7 @@
           width: 315px;
           height: 36px;
           border: 1px solid #e5e5e5;
-          text-indent: 42px;
+          text-indent: 50px;
           border-radius: 2px; }
         .formwrap .pos form .inp i {
           width: 40px;
@@ -60,12 +104,34 @@
           line-height: 38px;
           color: #fff;
           text-align: center; }
+        .formwrap .pos form .inp .notice {
+          display: none;
+          position: absolute;
+          bottom: -22px;
+          font-size: 11px;
+          text-indent: 19px;
+          color: #ff337e; }
+          .formwrap .pos form .inp .notice b {
+            color: #fff;
+            font-weight: normal;
+            text-indent: 0;
+            font-size: 16px;
+            line-height: 16px;
+            text-align: center;
+            width: 16px;
+            height: 16px;
+            background: #ff337e;
+            border-radius: 50%;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 2px; }
       .formwrap .pos form .btn {
         margin-top: 0; }
       .formwrap .pos form .btn input {
         background: #ff337e;
         border: 0;
-        border-radius: 4px;
+        border-radius: 2px;
         text-indent: 0;
         color: #fff;
         font-size: 16px;

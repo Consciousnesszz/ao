@@ -13,18 +13,24 @@
 		<div class="headerg">
 			<div class="box">
 				<div class="left">
-					<span>欢迎来到奥买家!</span>
-					<a href="html/login.html" class="orange">登录</a>
-					<a href="html/signup.html" class="orange">免费注册</a>
+					<div class="welcome">
+						<span>欢迎来到奥买家!</span>
+						<a href="html/login.html" class="orange">登录</a>
+						<a href="html/signup.html" class="orange">免费注册</a>
+					</div>
+					<div class="hello">
+						<span>欢迎你</span>
+						<a href="javascript:;" class="orange" id="exit">退出登录</a>
+					</div>
 					<div class="addr-wrap">
 						<span>配送至</span>
-						<div id="addr">
+						<div class="addr">
 							<span class="info0">四川</span>
 							<span class="info1">成都</span>
 							<span class="info2">锦江区</span>
 						</div>
 						<i class="icon iconfont icon-xiala"></i>
-						<div id="addr-select">
+						<div class="addr-select">
 							<span class="close">x</span>
 							<ul class="piecenav">
 								<li><span class="cinfo0">四川</span><i class="icon iconfont icon-xiala"></i></li>
@@ -39,7 +45,18 @@
 				</div>
 				<div class="right">
 					<ul>
-						<li>个人中心<i></i></li>
+						<li class="percenter">
+							个人中心<i></i>
+							<div class="perhide">
+								<ol>
+									<li>我的订单</li>
+									<li>优惠券</li>
+									<li>收货地址</li>
+									<li>退换货</li>
+									<li>收藏夹</li>
+								</ol>
+							</div>
+						</li>
 						<li>招商入驻</li>
 						<li><span><i class="red"></i></span>手机版</li>
 						<li><span><i class="red2"></i></span>我的购物车<span class="orange">0</span>件</li>
@@ -72,7 +89,7 @@
 		</div>
 		<div class="header">
 			<div class="left">
-				<a href="#"><i class="iconfont icon-rectangular4"></i>全部商品分类</a>
+				<a href="javascript:;" id="classify"><i class="iconfont icon-rectangular4"></i>全部商品分类</a>
 			</div>
 			<div id="nav">
 				<ul>
@@ -92,102 +109,828 @@
 				</ul>
 			</div>
 		</div>
+		<div class="aside">
+			<div><a href="javascript:;"><i></i>购物车<span class="num">0</span></a></div>
+		</div>
 	</div>
 	
 	<!----------------banner------------------>
 	<div id="banner">
 		<ul id="pic">
-			<li><a href="#"><img src="images/lunbo/move1.jpeg"></a></li>
-			<li><a href="#"><img src="images/lunbo/move2.jpeg"></a></li>
-			<li><a href="#"><img src="images/lunbo/move3.jpeg"></a></li>
-			<li><a href="#"><img src="images/lunbo/move4.jpeg"></a></li>
-			<li><a href="#"><img src="images/lunbo/move5.jpeg"></a></li>
+			<li><a href="html/detail.html"><img src="images/lunbo/move1.jpeg"></a></li>
+			<li><a href="html/detail.html"><img src="images/lunbo/move2.jpeg"></a></li>
+			<li><a href="html/detail.html"><img src="images/lunbo/move3.jpeg"></a></li>
+			<li><a href="html/detail.html"><img src="images/lunbo/move4.jpeg"></a></li>
+			<li><a href="html/detail.html"><img src="images/lunbo/move5.jpeg"></a></li>
 		</ul>
-		
+		<ol id="circle">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
 		<div class="subnav-wrap">
-			<ol id="circle">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ol>
 			<div id="subnav">
-				<ul>
+				<ul id="baby">
 					<li>
-						<p><a href="#"><i></i>母婴用品</a></p>
-						<span><a href="#"> 进口奶粉 </a></span>/
-						<span><a href="#"> 纸尿裤 </a></span>/
-						<span><a href="#"> 辅食/营养 </a></span>/
+						<p><a href="html/pages.html"><i></i>母婴用品</a></p>
+						<span><a href="html/pages.html"> 进口奶粉 </a></span>/
+						<span><a href="html/pages.html"> 纸尿裤 </a></span>/
+						<span><a href="html/pages.html"> 辅食/营养 </a></span>/
 					</li>
 				</ul>
-				<ul>
+				<div id="forbaby">
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+				</div>
+				<ul id="makeup">
 					<li>
-						<p><a href="#"><i></i>美妆个护</a></p>
-						<span><a href="#"> 彩妆 </a></span>/
-						<span><a href="#"> 面膜 </a></span>/
-						<span><a href="#"> 洗护护理 </a></span>/
+						<p><a href="html/pages.html"><i></i>美妆个护</a></p>
+						<span><a href="html/pages.html"> 彩妆 </a></span>/
+						<span><a href="html/pages.html"> 面膜 </a></span>/
+						<span><a href="html/pages.html"> 洗护护理 </a></span>/
 					</li>
 				</ul>
-				<ul>
+				<div id="formakeup">
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+				</div>
+				<ul id="home">
 					<li>
-						<p><a href="#"><i></i>家居百货</a></p>
-						<span><a href="#"> 居家日用 </a></span>/
-						<span><a href="#"> 手机数码 </a></span>/
-						<span><a href="#"> 家用电器 </a></span>
+						<p><a href="html/pages.html"><i></i>家居百货</a></p>
+						<span><a href="html/pages.html"> 居家日用 </a></span>/
+						<span><a href="html/pages.html"> 手机数码 </a></span>/
+						<span><a href="html/pages.html"> 家用电器 </a></span>
 					</li>
 				</ul>
-				<ul>
+				<div id="forhome">
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+				</div>
+				<ul id="food">
 					<li>
-						<p><a href="#"><i></i>食品保健</a></p>
-						<span><a href="#"> 饼干糕点 </a></span>/
-						<span><a href="#"> 酒水饮料 </a></span>/
-						<span><a href="#"> 休闲零食 </a></span>
+						<p><a href="html/pages.html"><i></i>食品保健</a></p>
+						<span><a href="html/pages.html"> 饼干糕点 </a></span>/
+						<span><a href="html/pages.html"> 酒水饮料 </a></span>/
+						<span><a href="html/pages.html"> 休闲零食 </a></span>
 					</li>
 				</ul>
-				<ul>
+				<div id="forfood">
+					<dl>
+						<dt>食品</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">保温杯</a></li>
+								<li><a href="html/pages.html">情侣杯</a></li>
+								<li><a href="html/pages.html">酒杯</a></li>
+								<li><a href="html/pages.html">咖啡杯</a></li>
+								<li><a href="html/pages.html">保温壶</a></li>
+								<li><a href="html/pages.html">电热水壶</a></li>
+								<li><a href="html/pages.html">茶壶</a></li>
+								<li><a href="html/pages.html">水壶</a></li>
+								<li><a href="html/pages.html">毛巾</a></li>
+								<li><a href="html/pages.html">饭盒</a></li>
+								<li><a href="html/pages.html">花王眼罩</a></li>
+								<li><a href="html/pages.html">成人用品</a></li>
+								<li><a href="html/pages.html">钢笔</a></li>
+								<li><a href="html/pages.html">签字笔</a></li>
+								<li><a href="html/pages.html">圆珠笔</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+				</div>
+				<ul id="bag">
 					<li>
-						<p><a href="#"><i></i>服饰箱包</a></p>
-						<span><a href="#"> 包袋 </a></span>/
-						<span><a href="#"> 眼镜 </a></span>/
-						<span><a href="#"> 服饰 </a></span>/
-						<span><a href="#"> 配饰 </a></span>/
-						<span><a href="#"> 箱子 </a></span>
+						<p><a href="html/pages.html"><i></i>服饰箱包</a></p>
+						<span><a href="html/pages.html"> 包袋 </a></span>/
+						<span><a href="html/pages.html"> 眼镜 </a></span>/
+						<span><a href="html/pages.html"> 服饰 </a></span>/
+						<span><a href="html/pages.html"> 配饰 </a></span>/
+						<span><a href="html/pages.html"> 箱子 </a></span>
 					</li>
 				</ul>
-				<ul>
+				<div id="forbag">
+					<dl>
+						<dt>包袋</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">潮流女包</a></li>
+								<li><a href="html/pages.html">小包</a></li>
+								<li><a href="html/pages.html">时尚男包</a></li>
+								<li><a href="html/pages.html">化妆包</a></li>
+								<li><a href="html/pages.html">手提包</a></li>
+								<li><a href="html/pages.html">Coach</a></li>
+								<li><a href="html/pages.html">Michael Kors</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>眼镜</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">太阳眼镜</a></li>
+								<li><a href="html/pages.html">儿童太阳眼镜</a></li>
+								<li><a href="html/pages.html">雷朋</a></li>
+								<li><a href="html/pages.html">奥迪Q7</a></li>
+								<li><a href="html/pages.html">丰田霸道</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>SUV</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">保时捷卡宴</a></li>
+								<li><a href="html/pages.html">路虎揽胜</a></li>
+								<li><a href="html/pages.html">奔驰</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>SUV</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">保时捷卡宴</a></li>
+								<li><a href="html/pages.html">奥迪Q7</a></li>
+								<li><a href="html/pages.html">丰田霸道</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>SUV</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">保时捷卡宴</a></li>
+								<li><a href="html/pages.html">路虎揽胜</a></li>
+								<li><a href="html/pages.html">奥迪Q7</a></li>
+								<li><a href="html/pages.html">丰田霸道</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>SUV</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">奔驰</a></li>
+								<li><a href="html/pages.html">奥迪Q7</a></li>
+								<li><a href="html/pages.html">丰田霸道</a></li>
+							</ol>
+						</dd>
+					</dl>
+				</div>
+				<ul id="car">
 					<li>
-						<p><a href="#"><i></i>平行进口汽车</a></p>
-						<span><a href="#"> SUV </a></span>/
-						<span><a href="#"> 跑车 </a></span>/
-						<span><a href="#"> 越野 </a></span>/
-						<span><a href="#"> 轿车 </a></span>
+						<p><a href="html/pages.html"><i></i>平行进口汽车</a></p>
+						<span><a href="html/pages.html"> SUV </a></span>/
+						<span><a href="html/pages.html"> 跑车 </a></span>/
+						<span><a href="html/pages.html"> 越野 </a></span>/
+						<span><a href="html/pages.html"> 轿车 </a></span>
 					</li>
 				</ul>
+				<div id="forcar">
+					<dl>
+						<dt>SUV</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">保时捷卡宴</a></li>
+								<li><a href="html/pages.html">路虎揽胜</a></li>
+								<li><a href="html/pages.html">奔驰</a></li>
+								<li><a href="html/pages.html">奥迪Q7</a></li>
+								<li><a href="html/pages.html">丰田霸道</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>跑车</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">玛莎拉蒂</a></li>
+								<li><a href="html/pages.html">福特野马</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>越野</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">宝马X5</a></li>
+							</ol>
+						</dd>
+					</dl>
+					<dl>
+						<dt>轿车</dt>
+						<dd>
+							<ol>
+								<li><a href="html/pages.html">宾利飞驰</a></li>
+							</ol>
+						</dd>
+					</dl>
+				</div>
 			</div>
 		</div>
 	</div>
 	<!----------------products------------------>
-	<div id="products">
-		<div id="hot"></div>
-		<div id="everyday"></div>
-		<div id="brand"></div>
-		<div id="baby"></div>
-		<div id="mother"></div>
-		<div id="beauty"></div>
-		<div id="prefume"></div>
-		<div id="personal"></div>
-		<div id="bag"></div>
-		<div id="diamond"></div>
-		<div id="food"></div>
-		<div id="drink"></div>
-		<div id="nutrition"></div>
-		<div id="daily"></div>
-		<div id="homework"></div>
-		<div id="kitchen"></div>
-		<div id="car"></div>
-	</div>
+	<div class="products-wrap">
+		<div id="products">
+		<!---------------hot---------------->
+			<div class="hot">
+				<h3><span>HOT必买爆品</span></h3>
+				<div id="hotcontent"></div>
+			</div>
+		<!---------------daily---------------->
+			<div class="daily">
+				<h3>
+					<span>每日秒杀 NEW SALL</span>
+					<ul id="everydaynav">
+						<li>正在抢购</li>
+						<li>即将开始</li>
+						<li>已经结束</li>
+						<i id="triangle"></i>
+					</ul>
+				</h3>
+				<div class="title">
+					<i></i><span class="hour"></span>:<span class="min"></span>:<span class="sec"></span>
+				</div>
+				<div class="innerhot">
+					<div class="left"><img src="images/penbig.png"></div>
+					<div class="right">
+						<div class="tag"><img src="images/german.png"><span>德国品牌</span></div>
+						<h5>LAMY/凌美狩猎者Safari系列钢笔  亮黑色F笔尖  单支/组合装</h5>
+						<p class="description">LAMY 专为年轻人设计出大胆、特殊、有个性的笔款，充分展现出年轻人的勇气及活力，狩猎者系列采用ABS笔身，镀黑铜圈笔夹，独特的人体工学三角握环，书写顺畅流利，深具设计风格，是为畅销的热门笔款之一。</p>
+						<span class="sellamount">已售 355 件<i></i></span>
+						<div class="price">
+							<span class="pricenow">￥ 129.00</span>
+							<span class="priceold">￥ 216.00</span>
+							<a href="html/pages.html">马上抢</a>
+							<b></b>
+						</div>
+					</div>
+				</div>
+			</div>
 
+			<!---------------brand---------------->
+			<div class="brand">
+				<h3><span>BRAND 全球品牌</span></h3>
+				<div>
+					<div class="left">
+						<a href="html/detail.html"><img src="images/brand/1.jpeg"></a>
+						<a href="html/detail.html"><img src="images/brand/2.jpeg"></a>
+						<a href="html/detail.html"><img src="images/brand/3.jpeg"></a>
+						<a href="html/detail.html"><img src="images/brand/4.jpeg"></a>
+					</div>
+					<div class="right">
+						<ul id="country">
+							<li class="orange"><i></i>德国品牌</li>
+							<li><i></i>美国品牌</li>
+							<li><i></i>澳大利亚品牌</li>
+							<li><i></i>日本品牌</li>
+							<li><i></i>韩国品牌</li>
+							<li><i></i>法国品牌</li>
+							<li><i></i>泰国品牌</li>
+							<li><i></i>英国品牌</li>
+							<li>更多品牌 ></li>
+						</ul>
+						<ol>
+							<li><a href="html/detail.html"><img src="images/brand/5.jpeg"></a></li>
+							<li><a href="html/detail.html"><img src="images/brand/6.jpeg"></a></li>
+							<li><a href="html/detail.html"><img src="images/brand/7.jpeg"></a></li>
+							<li><a href="html/detail.html"><img src="images/brand/5.jpeg"></a></li>
+							<li><a href="html/detail.html"><img src="images/brand/8.jpeg"></a></li>
+							<li><a href="html/detail.html"><img src="images/brand/8.jpeg"></a></li>
+							<li><a href="html/detail.html"><img src="images/brand/7.jpeg"></a></li>
+							<li><a href="html/detail.html"><img src="images/brand/6.jpeg"></a></li>
+							<li><a href="html/detail.html"><img src="images/brand/5.jpeg"></a></li>
+							<li><a href="html/detail.html"><img src="images/brand/5.jpeg"></a></li>
+							<li><a href="html/detail.html"><img src="images/brand/6.jpeg"></a></li>
+							<li><a href="html/detail.html"><img src="images/brand/7.jpeg"></a></li>
+							<li><a href="html/detail.html"><img src="images/brand/7.jpeg"></a></li>
+							<li><a href="html/detail.html"><img src="images/brand/7.jpeg"></a></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+
+			<!---------------baby---------------->
+			<div class="baby">
+				<h4>
+					<div class="left">
+						<b><i></i></b><span class="title">奶粉尿裤</span><span class="english">· MILK AND NAPPIES</span>
+					</div>
+					<div class="right">
+						<ul>
+							<li><a href="html/detail.html">花王</a><span>/</span></li>
+							<li><a href="html/detail.html">尤妮佳</a><span>/</span></li>
+							<li><a href="html/detail.html">大王</a><span>/</span></li>
+							<li><a href="html/detail.html">帮宝适</a><span>/</span></li>
+							<li><a href="html/detail.html">爱他美</a><span>/</span></li>
+							<li><a href="html/detail.html">澳洲a2</a><span>/</span></li>
+							<li><a href="html/detail.html">喜宝</a><span>/</span></li>
+							<li><a href="html/detail.html">牛栏</a><span>/</span></li>
+							<li><a href="html/detail.html">更多好货 MORE</a></li>
+						</ul>
+					</div>
+				</h4>
+				<div class="innerbaby">
+					<div class="babycontent">
+						<div class="left">
+							<a href="html/detail.html" class="first"><img src="images/milk/1.jpeg"></a>
+							<ul>
+								<li><a href="html/detail.html">婴儿奶粉</a></li>
+								<li><a href="html/detail.html">宝宝辅食</a></li>
+								<li><a href="html/detail.html">纸尿片</a></li>
+								<li><a href="html/detail.html">奶瓶奶嘴</a></li>
+								<li><a href="html/detail.html">宝宝洗护</a></li>
+								<li><a href="html/detail.html">宝宝用品</a></li>
+								<li><a href="html/detail.html">安全防护</a></li>
+								<li><a href="html/detail.html">妈妈用品</a></li>
+							</ul>
+						</div>
+						<div class="center">
+							<dl>
+								<dt><a href="html/detail.html"><span><i></i>日本品牌</span><img src="images/milk/3.jpeg"></a></dt>
+								<dd>
+									<p><a href="html/detail.html">KAO/花王 Merries妙而舒纸尿裤M42 婴儿尿不湿 适用体重6-11kg 日本进口</a></p>
+									<span class="pricenow">￥95.00</span>
+									<span class="pricebefore">￥190.00</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href="html/detail.html"><span><i></i>德国品牌</span><img src="images/milk/5.jpeg"></a></dt>
+								<dd>
+									<p><a href="html/detail.html">KAO/花王 Merries妙而舒纸尿裤M42 婴儿尿不湿 适用体重6-11kg 日本进口</a></p>
+									<span class="pricenow">￥95.00</span>
+									<span class="pricebefore">￥190.00</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href="html/detail.html"><span><i></i>日本品牌</span><img src="images/milk/4.jpeg"></a></dt>
+								<dd>
+									<p><a href="html/detail.html">KAO/花王 Merries妙而舒纸尿裤M42 婴儿尿不湿 适用体重6-11kg 日本进口</a></p>
+									<span class="pricenow">￥95.00</span>
+									<span class="pricebefore">￥190.00</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href="html/detail.html"><span><i></i>德国品牌</span><img src="images/milk/6.jpeg"></a></dt>
+								<dd>
+									<p><a href="html/detail.html">KAO/花王 Merries妙而舒纸尿裤M42 婴儿尿不湿 适用体重6-11kg 日本进口</a></p>
+									<span class="pricenow">￥95.00</span>
+									<span class="pricebefore">￥190.00</span>
+								</dd>
+							</dl>
+						</div>
+						<div class="right">
+							<i></i>
+							<a href="html/detail.html"><img src="images/milk/2.jpeg"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mother">
+				<h4>
+					<div class="left">
+						<b><i></i></b><span class="title">母婴用品</span><span class="english">· MILK AND NAPPIES</span>
+					</div>
+					<div class="right">
+						<ul>
+							<li><a href="html/detail.html">花王</a><span>/</span></li>
+							<li><a href="html/detail.html">尤妮佳</a><span>/</span></li>
+							<li><a href="html/detail.html">大王</a><span>/</span></li>
+							<li><a href="html/detail.html">帮宝适</a><span>/</span></li>
+							<li><a href="html/detail.html">爱他美</a><span>/</span></li>
+							<li><a href="html/detail.html">澳洲a2</a><span>/</span></li>
+							<li><a href="html/detail.html">喜宝</a><span>/</span></li>
+							<li><a href="html/detail.html">牛栏</a><span>/</span></li>
+							<li><a href="html/detail.html">更多好货 MORE</a></li>
+						</ul>
+					</div>
+				</h4>
+			</div>
+			<div class="beauty">
+				<h4>
+					<div class="left">
+						<b><i></i></b><span class="title">美容护肤</span><span class="english">· MILK AND NAPPIES</span>
+					</div>
+					<div class="right">
+						<ul>
+							<li><a href="html/detail.html">花王</a><span>/</span></li>
+							<li><a href="html/detail.html">尤妮佳</a><span>/</span></li>
+							<li><a href="html/detail.html">大王</a><span>/</span></li>
+							<li><a href="html/detail.html">帮宝适</a><span>/</span></li>
+							<li><a href="html/detail.html">爱他美</a><span>/</span></li>
+							<li><a href="html/detail.html">澳洲a2</a><span>/</span></li>
+							<li><a href="html/detail.html">喜宝</a><span>/</span></li>
+							<li><a href="html/detail.html">牛栏</a><span>/</span></li>
+							<li><a href="html/detail.html">更多好货 MORE</a></li>
+						</ul>
+					</div>
+				</h4>
+			</div>
+			<div class="perfume">
+				<h4>
+					<div class="left">
+						<b><i></i></b><span class="title">彩妆香水</span><span class="english">· MILK AND NAPPIES</span>
+					</div>
+					<div class="right">
+						<ul>
+							<li><a href="html/detail.html">花王</a><span>/</span></li>
+							<li><a href="html/detail.html">尤妮佳</a><span>/</span></li>
+							<li><a href="html/detail.html">大王</a><span>/</span></li>
+							<li><a href="html/detail.html">帮宝适</a><span>/</span></li>
+							<li><a href="html/detail.html">爱他美</a><span>/</span></li>
+							<li><a href="html/detail.html">澳洲a2</a><span>/</span></li>
+							<li><a href="html/detail.html">喜宝</a><span>/</span></li>
+							<li><a href="html/detail.html">牛栏</a><span>/</span></li>
+							<li><a href="html/detail.html">更多好货 MORE</a></li>
+						</ul>
+					</div>
+				</h4>
+			</div>
+			<div class="personal">
+				<h4>
+					<div class="left">
+						<b><i></i></b><span class="title">个人洗护</span><span class="english">· MILK AND NAPPIES</span>
+					</div>
+					<div class="right">
+						<ul>
+							<li><a href="html/detail.html">花王</a><span>/</span></li>
+							<li><a href="html/detail.html">尤妮佳</a><span>/</span></li>
+							<li><a href="html/detail.html">大王</a><span>/</span></li>
+							<li><a href="html/detail.html">帮宝适</a><span>/</span></li>
+							<li><a href="html/detail.html">爱他美</a><span>/</span></li>
+							<li><a href="html/detail.html">澳洲a2</a><span>/</span></li>
+							<li><a href="html/detail.html">喜宝</a><span>/</span></li>
+							<li><a href="html/detail.html">牛栏</a><span>/</span></li>
+							<li><a href="html/detail.html">更多好货 MORE</a></li>
+						</ul>
+					</div>
+				</h4>
+			</div>
+			<div class="bag">
+				<h4>
+					<div class="left">
+						<b><i></i></b><span class="title">服饰精选</span><span class="english">· MILK AND NAPPIES</span>
+					</div>
+					<div class="right">
+						<ul>
+							<li><a href="html/detail.html">花王</a><span>/</span></li>
+							<li><a href="html/detail.html">尤妮佳</a><span>/</span></li>
+							<li><a href="html/detail.html">大王</a><span>/</span></li>
+							<li><a href="html/detail.html">帮宝适</a><span>/</span></li>
+							<li><a href="html/detail.html">爱他美</a><span>/</span></li>
+							<li><a href="html/detail.html">澳洲a2</a><span>/</span></li>
+							<li><a href="html/detail.html">喜宝</a><span>/</span></li>
+							<li><a href="html/detail.html">牛栏</a><span>/</span></li>
+							<li><a href="html/detail.html">更多好货 MORE</a></li>
+						</ul>
+					</div>
+				</h4>
+			</div>
+			<div class="diamond">
+				<h4>
+					<div class="left">
+						<b><i></i></b><span class="title">鞋靴精选</span><span class="english">· MILK AND NAPPIES</span>
+					</div>
+					<div class="right">
+						<ul>
+							<li><a href="html/detail.html">花王</a><span>/</span></li>
+							<li><a href="html/detail.html">尤妮佳</a><span>/</span></li>
+							<li><a href="html/detail.html">大王</a><span>/</span></li>
+							<li><a href="html/detail.html">帮宝适</a><span>/</span></li>
+							<li><a href="html/detail.html">爱他美</a><span>/</span></li>
+							<li><a href="html/detail.html">澳洲a2</a><span>/</span></li>
+							<li><a href="html/detail.html">喜宝</a><span>/</span></li>
+							<li><a href="html/detail.html">牛栏</a><span>/</span></li>
+							<li><a href="html/detail.html">更多好货 MORE</a></li>
+						</ul>
+					</div>
+				</h4>
+			</div>
+			<div class="food">
+				<h4>
+					<div class="left">
+						<b><i></i></b><span class="title">箱包精选</span><span class="english">· MILK AND NAPPIES</span>
+					</div>
+					<div class="right">
+						<ul>
+							<li><a href="html/detail.html">花王</a><span>/</span></li>
+							<li><a href="html/detail.html">尤妮佳</a><span>/</span></li>
+							<li><a href="html/detail.html">大王</a><span>/</span></li>
+							<li><a href="html/detail.html">帮宝适</a><span>/</span></li>
+							<li><a href="html/detail.html">爱他美</a><span>/</span></li>
+							<li><a href="html/detail.html">澳洲a2</a><span>/</span></li>
+							<li><a href="html/detail.html">喜宝</a><span>/</span></li>
+							<li><a href="html/detail.html">牛栏</a><span>/</span></li>
+							<li><a href="html/detail.html">更多好货 MORE</a></li>
+						</ul>
+					</div>
+				</h4>
+			</div>
+		</div>
+	</div>
 	<!----------------footer------------------>
 	<div id="footer">
 		<div class="top">
@@ -269,10 +1012,55 @@
 			</div>
 		</div>
 	</div>
+	
+	<!----------------floors------------------>
+	<div id="floors">
+		<ul>
+			<li class="hcurr">HOT</li>
+			<li>每日秒杀</li>
+			<li>名牌专场</li>
+			<li>奶粉尿裤</li>
+			<li>母婴用品</li>
+			<li>美容护肤</li>
+			<li>彩妆香水</li>
+			<li>个人洗护</li>
+			<li>服饰精选</li>
+			<li>鞋靴精选</li>
+			<li>箱包精选</li>
+			<li>回到顶部</li>
+		</ul>
+	</div>
+
 
 	<!--<script src="js/index/entry.js"></script>-->
 	<script type="text/javascript" src="js/tools/jquery.js"></script>
+	<script type="text/javascript" src="js/tools/jquery-cookie.js"></script>
+	<script type="text/javascript" src="js/tools/template.js"></script>
+	<script type="text/javascript" src="js/temp.js"></script>
+	<script type="text/javascript" src="js/account.js"></script>
 	<script type="text/javascript" src="js/addr.js"></script>
+	<script type="text/javascript" src="js/lunbo.js"></script>
 	<script type="text/javascript" src="js/move.js"></script>
+	
+	<script id="hottem" type="text/html">
+		{{each list}}
+		<div class="innerhot">
+			<div class="left"><img src="images/pro/{{$value.img}}"></div>
+			<div class="right">
+				<div class="tag"><img src="images/german.png"><span>德国品牌</span></div>
+				<h5>{{$value.title}}</h5>
+				<p class="description">{{$value.para}}</p>
+				<span class="sellamount">已售 {{$value.sellNum}} 件<i></i></span>
+				<div class="price">
+					<span class="pricenow">￥ {{$value.priceNow}}</span>
+					<span class="priceold">￥ {{$value.priceBef}}</span>
+					<a href="html/detail.html">马上抢</a>
+					<b></b>
+				</div>
+			</div>
+		</div>
+		{{/each}}
+	</script>
+	
 </body>
 </html>

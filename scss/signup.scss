@@ -57,8 +57,9 @@
 
 	form{
 		width: 100%;
-		height: 343px;
+		height: 330px;
 		border: 1px solid #ddd;
+		position: relative;
 		div{
 			width: 320px;
 			height: 42px;
@@ -77,17 +78,86 @@
 				top: 11px;
 			}
 		}
-		div:first-of-type{
+		.notice{
+			display: none;
+			position: absolute;
+			bottom: -22px;
+			font-size: 11px;
+			text-indent: 19px;
+			color: #ff337e;
+			b{
+				color: #fff;
+				font-weight: normal;
+				text-indent: 0;
+				font-size: 16px;
+				line-height: 16px;
+				text-align: center;
+				width: 16px;
+				height: 16px;
+				background: #ff337e;
+				border-radius: 50%;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 2px;
+			}
+		}
+		#phone{
 			margin-top: 80px;
 		}
-		div:nth-of-type(3){
+		#hide{
+			display: none;
+			height: 227px;
+			#idcode{
+				input{
+					width: 117px;
+				}
+				.foridcode{
+					display: inline-block;
+					width: 83px;
+					text-align: center;
+					line-height: 44px;
+					letter-spacing: 5px;
+					font-size: 20px;
+					background: #eee;
+					vertical-align: middle;
+					height: 44px;
+					margin: 0 5px;
+				}
+				.gray{
+					font-size: 11px;
+					color: #aaa;
+				}
+				a{
+					font-size: 11px;
+				}
+			}
+			#checkemail{
+				input{
+					width: 187px;
+				}
+				a{
+					display: inline-block;
+				    background: #ffba00;
+				    width: 135px;
+				    line-height: 44px;
+				    height: 44px;
+				    border: 0;
+				    text-align: center;
+				    color: #fff;
+				    margin-left: -5px;
+				    font-size: 14px;
+				}
+			}
+		}
+		#agree{
 			height: 20px;
 			margin-bottom: 13px;
 			a{
 				color:#ff337e;
 			}
 		}
-		div:nth-of-type(4){
+		#sub{
 			input{
 				background: #ff337e;
 				color: white;

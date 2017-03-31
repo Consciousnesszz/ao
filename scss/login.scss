@@ -9,8 +9,8 @@
 .formwrap{
 	width: 100%;
 	height: 480px;
-	background: url(../images/lunbo/move1.jpeg);
-	background-position: -720px;
+	background: url(../images/lunbo/move1.jpeg) no-repeat;
+	background-position: -640px -20px;
 	overflow: hidden;
 	.pos{
 		width: 992px;
@@ -23,10 +23,12 @@
 			width: 350px;
 			position: absolute;
 			right: 0;
+			overflow: hidden;
 			.title{
 				width: 100%;
 				height: 54px;
 				border-bottom: 1px solid #ddd;
+				position: relative;
 				a{
 					display: block;
 					float: left;
@@ -37,8 +39,63 @@
 					font-size: 16px;
 					color: #999;
 				}
+				a:nth-of-type(1){
+					color: #333;
+					border-bottom: 2px solid #ff224e;
+				}
 				a:nth-of-type(2){
 					width: 115px;
+				}
+			}
+			.hide{
+				width: 700px;
+				height: 335px;
+				position: absolute;
+				top: 54px;
+				left: 0;
+				.first{
+					width: 50%;
+					height: 335px;
+					float: left;
+				}
+				.second{
+					width: 50%;
+					height: 335px;
+					float: left;
+					.idcode{
+						input{
+							width: 192px;
+						}
+						a{
+							display: block;
+							float: right;
+							width: 121px;
+							height: 40px;
+							background: #ffba00;
+							color: #fff;
+							line-height: 40px;
+							text-align: center;
+						}
+					}
+					.btn{
+						margin-top: 30px;
+					}
+					p{
+						width: 316px;
+						height: 32px;
+						margin: 20px auto;
+						font-size: 11px;
+						a{
+							color: #ff224e;
+						}
+					}
+					.others{
+						margin-top: 15px;
+						p{
+							height: 12px;
+							margin-bottom: 5px;
+						}
+					}
 				}
 			}
 			.inp{
@@ -50,7 +107,7 @@
 					width: 315px;
 					height: 36px;
 					border: 1px solid #e5e5e5;
-					text-indent: 42px;
+					text-indent: 50px;
 					border-radius: 2px;
 				}
 				i{
@@ -65,6 +122,30 @@
 					color: #fff;
 					text-align: center;
 				}
+				.notice{
+					display: none;
+					position: absolute;
+					bottom: -22px;
+					font-size: 11px;
+					text-indent: 19px;
+					color: #ff337e;
+					b{
+						color: #fff;
+						font-weight: normal;
+						text-indent: 0;
+						font-size: 16px;
+						line-height: 16px;
+						text-align: center;
+						width: 16px;
+						height: 16px;
+						background: #ff337e;
+						border-radius: 50%;
+						display: block;
+						position: absolute;
+						left: 0;
+						top: 2px;
+					}
+				}
 			}
 			.btn{
 				margin-top: 0;
@@ -72,7 +153,7 @@
 			.btn input{
 				background: #ff337e;
 				border: 0;
-				border-radius: 4px;
+				border-radius: 2px;
 				text-indent: 0;
 				color: #fff;
 				font-size: 16px;

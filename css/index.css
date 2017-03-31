@@ -19,31 +19,30 @@
     #banner > ul li:first-of-type {
       display: block;
       opacity: 1; }
+  #banner > ol {
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 600px;
+    z-index: 2; }
+    #banner > ol li {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      float: left;
+      margin-right: 20px;
+      background: rgba(255, 255, 255, 0.6); }
+      #banner > ol li:hover {
+        background: white; }
+    #banner > ol li:first-of-type {
+      background: white; }
   #banner .subnav-wrap {
     width: 1200px;
     height: 100%;
     margin: 0 auto;
     position: relative; }
-    #banner .subnav-wrap > ol {
-      width: 200px;
-      height: 20px;
-      position: absolute;
-      bottom: 30px;
-      left: 500px;
-      z-index: 2; }
-      #banner .subnav-wrap > ol li {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        float: left;
-        margin-right: 20px;
-        background: rgba(255, 255, 255, 0.6); }
-        #banner .subnav-wrap > ol li:hover {
-          background: white; }
-      #banner .subnav-wrap > ol li:first-of-type {
-        background: white; }
   #banner #subnav {
-    width: 220px;
     height: 100%;
     background: #f5f5f5;
     float: left; }
@@ -95,3 +94,580 @@
       background-position: -40px -186px; }
     #banner #subnav ul:nth-of-type(6) li p a i {
       background-position: -40px -216px; }
+    #banner #subnav div {
+      display: none;
+      padding: 50px 20px 0;
+      height: 100%;
+      background: #fff;
+      position: absolute;
+      top: 0;
+      left: 220px; }
+      #banner #subnav div dl {
+        width: 280px;
+        height: 200px;
+        float: left;
+        padding-right: 25px; }
+        #banner #subnav div dl dt {
+          display: block;
+          height: 30px;
+          line-height: 30px;
+          border-bottom: 1px solid #eaeaea; }
+        #banner #subnav div dl dd {
+          display: block;
+          padding-top: 14px;
+          margin-left: -8px; }
+          #banner #subnav div dl dd ol li {
+            float: left;
+            font-size: 13px;
+            line-height: 14px;
+            padding: 0 8px;
+            color: #EEE;
+            height: 14px;
+            border-right: 1px solid #EEE;
+            margin: 7px 0;
+            white-space: nowrap; }
+
+/*-------------product--------------*/
+.products-wrap {
+  width: 100%;
+  background: #f5f5f5;
+  padding-bottom: 14px; }
+  .products-wrap #products {
+    width: 1200px;
+    margin: 0 auto;
+    /*------------hot----------*/
+    /*------------daily----------*/
+    /*------------brand----------*/
+    /*------------babycontent----------*/
+    /*------------floor-------------*/ }
+    .products-wrap #products h3 {
+      width: 100%;
+      height: 33px;
+      padding-top: 50px;
+      border-bottom: 2px solid #ff3f38; }
+      .products-wrap #products h3 span {
+        display: block;
+        float: left;
+        width: 290px;
+        height: 33px;
+        background: linear-gradient(to right, #ff432e, #ff2e63);
+        color: #fff;
+        text-indent: 21px;
+        line-height: 33px;
+        font-size: 16px; }
+      .products-wrap #products h3 ul {
+        width: 450px;
+        height: 33px;
+        float: right;
+        position: relative; }
+        .products-wrap #products h3 ul li {
+          padding: 0 45px;
+          font-size: 13px;
+          height: 33px;
+          line-height: 33px;
+          color: #666;
+          text-align: center;
+          float: left;
+          cursor: pointer; }
+        .products-wrap #products h3 ul li:first-of-type {
+          color: #ff442a;
+          font-weight: bold; }
+        .products-wrap #products h3 ul i {
+          content: "";
+          display: block;
+          position: absolute;
+          background: url(../images/spirit/icon.png);
+          background-position: -1px -83px;
+          width: 14px;
+          height: 9px;
+          bottom: -2px;
+          left: 65px; }
+    .products-wrap #products h4 {
+      width: 100%;
+      height: 33px;
+      padding-top: 50px;
+      border-bottom: 2px solid #ff3f38;
+      position: relative; }
+      .products-wrap #products h4 .left {
+        width: 300px;
+        height: 33px;
+        position: relative;
+        float: left; }
+        .products-wrap #products h4 .left b {
+          display: block;
+          width: 44px;
+          height: 44px;
+          padding: 5px;
+          background: #f4f4f4;
+          position: absolute;
+          top: -10px;
+          z-index: 1; }
+          .products-wrap #products h4 .left b i {
+            display: block;
+            position: absolute;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #ff442a url(../images/spirit/icon.png) no-repeat;
+            background-position: -211px -57px; }
+        .products-wrap #products h4 .left .title {
+          margin-left: 54px;
+          line-height: 33px;
+          font-size: 21px;
+          color: #ff442a; }
+        .products-wrap #products h4 .left .english {
+          margin-left: 10px; }
+      .products-wrap #products h4 .right {
+        width: 540px;
+        height: 33px;
+        line-height: 33px;
+        color: #666;
+        float: right; }
+        .products-wrap #products h4 .right ul li {
+          float: left; }
+          .products-wrap #products h4 .right ul li span {
+            padding: 0 5px; }
+    .products-wrap #products .hot {
+      width: 100%;
+      height: 1388px; }
+      .products-wrap #products .hot #hotcontent {
+        width: 100%;
+        height: 1277px; }
+        .products-wrap #products .hot #hotcontent .innerhot {
+          width: 594px;
+          height: 247px;
+          margin-top: 12px;
+          background: #fff;
+          float: left; }
+          .products-wrap #products .hot #hotcontent .innerhot .left {
+            width: 232px;
+            height: 232px;
+            float: left;
+            padding: 6px;
+            overflow: hidden; }
+            .products-wrap #products .hot #hotcontent .innerhot .left img {
+              width: 232px;
+              transition: 0.3s; }
+          .products-wrap #products .hot #hotcontent .innerhot .right {
+            width: 308px;
+            height: 225px;
+            padding: 6px 16px;
+            float: right; }
+            .products-wrap #products .hot #hotcontent .innerhot .right .tag {
+              height: 42px; }
+              .products-wrap #products .hot #hotcontent .innerhot .right .tag img {
+                vertical-align: middle; }
+              .products-wrap #products .hot #hotcontent .innerhot .right .tag span {
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 9px;
+                color: #7c7c7c; }
+            .products-wrap #products .hot #hotcontent .innerhot .right h5 {
+              width: 100%;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              height: 30px;
+              line-height: 30px;
+              border-bottom: 1px dotted #eee;
+              color: #000;
+              font-size: 11px; }
+            .products-wrap #products .hot #hotcontent .innerhot .right .description {
+              font-size: 11px;
+              line-height: 18px;
+              height: 72px;
+              overflow: hidden;
+              color: #999; }
+            .products-wrap #products .hot #hotcontent .innerhot .right .sellamount {
+              display: block;
+              width: 86px;
+              height: 22px;
+              background: #ff442e;
+              color: #fff;
+              line-height: 22px;
+              text-align: center;
+              font-size: 11px;
+              border-radius: 2px;
+              position: relative; }
+              .products-wrap #products .hot #hotcontent .innerhot .right .sellamount i {
+                display: inline-block;
+                width: 0px;
+                height: 0px;
+                border: 11px solid transparent;
+                border-left-color: #ff442e;
+                position: absolute;
+                right: -21px;
+                top: 0; }
+            .products-wrap #products .hot #hotcontent .innerhot .right .price {
+              width: 100%;
+              height: 45px; }
+              .products-wrap #products .hot #hotcontent .innerhot .right .price .pricenow {
+                display: inline-block;
+                color: #ff442e;
+                font-size: 16px;
+                vertical-align: bottom; }
+              .products-wrap #products .hot #hotcontent .innerhot .right .price .priceold {
+                display: inline-block;
+                color: #999;
+                font-size: 11px;
+                margin-left: 10px;
+                text-decoration: line-through;
+                vertical-align: bottom;
+                padding-bottom: 2px; }
+              .products-wrap #products .hot #hotcontent .innerhot .right .price a {
+                float: right;
+                display: block;
+                width: 83px;
+                height: 25px;
+                border: 1px solid #ff442e;
+                border-radius: 2px;
+                text-align: center;
+                line-height: 25px;
+                color: #ff442e;
+                margin-top: 18px; }
+              .products-wrap #products .hot #hotcontent .innerhot .right .price b {
+                height: 45px;
+                display: inline-block; }
+          .products-wrap #products .hot #hotcontent .innerhot:nth-of-type(even) {
+            margin-left: 10px; }
+        .products-wrap #products .hot #hotcontent .innerhot:hover .left img {
+          width: 252px;
+          margin-top: -15px;
+          margin-left: -15px; }
+    .products-wrap #products .daily {
+      width: 100%;
+      height: 500px;
+      overflow: hidden; }
+      .products-wrap #products .daily .title {
+        width: 250px;
+        height: 38px;
+        margin: 10px auto; }
+        .products-wrap #products .daily .title i {
+          display: inline-block;
+          width: 85px;
+          height: 30px;
+          background: url(../images/spirit/icon.png);
+          background-position: -66px -361px;
+          vertical-align: middle; }
+        .products-wrap #products .daily .title span {
+          display: inline-block;
+          height: 38px;
+          width: 38px;
+          line-height: 38px;
+          margin: 0 5px;
+          text-align: center;
+          font-size: 25px;
+          color: #000;
+          background: #fff;
+          vertical-align: middle; }
+      .products-wrap #products .daily .innerhot {
+        width: 594px;
+        height: 247px;
+        margin-top: 12px;
+        background: #fff;
+        float: left; }
+        .products-wrap #products .daily .innerhot .left {
+          width: 232px;
+          height: 232px;
+          float: left;
+          padding: 6px;
+          overflow: hidden; }
+          .products-wrap #products .daily .innerhot .left img {
+            width: 232px;
+            transition: 0.3s; }
+        .products-wrap #products .daily .innerhot .right {
+          width: 308px;
+          height: 225px;
+          padding: 6px 16px;
+          float: right; }
+          .products-wrap #products .daily .innerhot .right .tag {
+            height: 42px; }
+            .products-wrap #products .daily .innerhot .right .tag img {
+              vertical-align: middle; }
+            .products-wrap #products .daily .innerhot .right .tag span {
+              display: inline-block;
+              vertical-align: middle;
+              margin-left: 9px;
+              color: #7c7c7c; }
+          .products-wrap #products .daily .innerhot .right h5 {
+            width: 100%;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            height: 30px;
+            line-height: 30px;
+            border-bottom: 1px dotted #eee;
+            color: #000;
+            font-size: 11px; }
+          .products-wrap #products .daily .innerhot .right .description {
+            font-size: 11px;
+            line-height: 18px;
+            color: #999; }
+          .products-wrap #products .daily .innerhot .right .sellamount {
+            display: block;
+            width: 86px;
+            height: 22px;
+            background: #ff442e;
+            color: #fff;
+            line-height: 22px;
+            text-align: center;
+            font-size: 11px;
+            border-radius: 2px;
+            position: relative; }
+            .products-wrap #products .daily .innerhot .right .sellamount i {
+              display: inline-block;
+              width: 0px;
+              height: 0px;
+              border: 11px solid transparent;
+              border-left-color: #ff442e;
+              position: absolute;
+              right: -21px;
+              top: 0; }
+          .products-wrap #products .daily .innerhot .right .price {
+            width: 100%;
+            height: 45px; }
+            .products-wrap #products .daily .innerhot .right .price .pricenow {
+              display: inline-block;
+              color: #ff442e;
+              font-size: 16px;
+              vertical-align: bottom; }
+            .products-wrap #products .daily .innerhot .right .price .priceold {
+              display: inline-block;
+              color: #999;
+              font-size: 11px;
+              margin-left: 10px;
+              text-decoration: line-through;
+              vertical-align: bottom;
+              padding-bottom: 2px; }
+            .products-wrap #products .daily .innerhot .right .price a {
+              float: right;
+              display: block;
+              width: 83px;
+              height: 25px;
+              border: 1px solid #ff442e;
+              border-radius: 2px;
+              text-align: center;
+              line-height: 25px;
+              color: #ff442e;
+              margin-top: 18px; }
+            .products-wrap #products .daily .innerhot .right .price b {
+              height: 45px;
+              display: inline-block; }
+        .products-wrap #products .daily .innerhot:nth-of-type(even) {
+          margin-left: 10px; }
+      .products-wrap #products .daily .innerhot:hover .left img {
+        width: 252px;
+        margin-top: -15px;
+        margin-left: -15px; }
+    .products-wrap #products .brand {
+      width: 100%;
+      height: 850px; }
+      .products-wrap #products .brand .left {
+        float: left;
+        width: 717px;
+        height: 800px;
+        padding-right: 27px; }
+        .products-wrap #products .brand .left a {
+          display: block;
+          width: 719px;
+          height: 181px;
+          margin-top: 10px; }
+          .products-wrap #products .brand .left a img {
+            border: 1px solid #aaa; }
+      .products-wrap #products .brand .right {
+        float: left;
+        width: 436px;
+        height: 743px;
+        padding: 10px 0 0 20px;
+        background: #fff;
+        margin-top: 10px; }
+        .products-wrap #products .brand .right ul {
+          width: 436px;
+          height: 132px; }
+          .products-wrap #products .brand .right ul li {
+            float: left;
+            width: 130px;
+            height: 32px;
+            border: 1px solid #ddd;
+            border-radius: 2px;
+            margin: 10px 10px 0 0;
+            text-align: center;
+            line-height: 32px;
+            color: #666;
+            cursor: pointer; }
+            .products-wrap #products .brand .right ul li i {
+              display: inline-block;
+              width: 16px;
+              height: 11px;
+              background: url(../images/spirit/icon_s_flag.png);
+              margin-right: 3px; }
+          .products-wrap #products .brand .right ul li:nth-of-type(2) i {
+            background-position: 0 -77px; }
+          .products-wrap #products .brand .right ul li:nth-of-type(3) i {
+            background-position: 0 -66px; }
+          .products-wrap #products .brand .right ul li:nth-of-type(4) i {
+            background-position: 0 -33px; }
+          .products-wrap #products .brand .right ul li:nth-of-type(5) i {
+            background-position: 0 -55px; }
+          .products-wrap #products .brand .right ul li:nth-of-type(6) i {
+            background-position: 0 -44px; }
+          .products-wrap #products .brand .right ul li:nth-of-type(7) i {
+            background-position: 0 -99px; }
+          .products-wrap #products .brand .right ul li:nth-of-type(8) i {
+            background-position: 0 -11px; }
+          .products-wrap #products .brand .right ul .orange {
+            width: 132px;
+            height: 34px;
+            background: #ff442a;
+            border: 0;
+            color: #fff; }
+        .products-wrap #products .brand .right ol {
+          width: 423px;
+          height: 442px; }
+          .products-wrap #products .brand .right ol li {
+            float: left;
+            width: 131px;
+            height: 68px;
+            margin: 10px 10px 0 0; }
+    .products-wrap #products .babycontent {
+      margin-top: 14px;
+      width: 100%;
+      height: 500px; }
+      .products-wrap #products .babycontent .left {
+        width: 220px;
+        height: 100%;
+        float: left; }
+        .products-wrap #products .babycontent .left .first {
+          display: block;
+          width: 220px;
+          height: 376px;
+          overflow: hidden; }
+          .products-wrap #products .babycontent .left .first img {
+            width: 220px;
+            transition: 0.3s; }
+          .products-wrap #products .babycontent .left .first img:hover {
+            width: 250px;
+            margin-top: -15px;
+            margin-left: -15px; }
+        .products-wrap #products .babycontent .left ul {
+          width: 100%;
+          height: 124px;
+          background: #e7e5e5; }
+          .products-wrap #products .babycontent .left ul li {
+            width: 50%;
+            height: 25%;
+            float: left;
+            line-height: 31px;
+            text-align: center;
+            color: #666; }
+      .products-wrap #products .babycontent .center {
+        width: 540px;
+        height: 460px;
+        background: #fff;
+        padding: 20px;
+        float: left; }
+        .products-wrap #products .babycontent .center img {
+          width: 146px;
+          height: 146px; }
+        .products-wrap #products .babycontent .center dl {
+          width: 269px;
+          height: 230px;
+          float: left; }
+          .products-wrap #products .babycontent .center dl dt {
+            padding-top: 16px;
+            position: relative;
+            transition: 0.3s; }
+            .products-wrap #products .babycontent .center dl dt span {
+              display: block;
+              position: absolute;
+              width: 100px;
+              height: 20px;
+              top: 16px;
+              left: 20px; }
+              .products-wrap #products .babycontent .center dl dt span i {
+                display: inline-block;
+                width: 16px;
+                height: 11px;
+                margin-right: 3px;
+                background: url(../images/spirit/icon_s_flag.png); }
+            .products-wrap #products .babycontent .center dl dt img {
+              margin-left: 50px; }
+            .products-wrap #products .babycontent .center dl dt:hover {
+              margin-left: -10px; }
+          .products-wrap #products .babycontent .center dl dd {
+            margin-left: 20px; }
+            .products-wrap #products .babycontent .center dl dd p {
+              width: 209px;
+              height: 16px;
+              padding-top: 12px;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+              font-size: 12px; }
+              .products-wrap #products .babycontent .center dl dd p a {
+                color: #aaa; }
+            .products-wrap #products .babycontent .center dl dd .pricenow {
+              color: #ff442e;
+              font-size: 18px; }
+            .products-wrap #products .babycontent .center dl dd .pricebefore {
+              text-decoration: line-through;
+              font-size: 11px;
+              color: #aaa; }
+        .products-wrap #products .babycontent .center dl:first-of-type, .products-wrap #products .babycontent .center dl:nth-of-type(2) {
+          border-bottom: 1px dotted #aaa; }
+        .products-wrap #products .babycontent .center dl:nth-of-type(odd) {
+          border-right: 1px dotted #aaa; }
+          .products-wrap #products .babycontent .center dl:nth-of-type(odd) i {
+            background-position: 0 -33px; }
+      .products-wrap #products .babycontent .right {
+        width: 400px;
+        height: 100%;
+        float: left;
+        position: relative; }
+        .products-wrap #products .babycontent .right i {
+          width: 73px;
+          height: 61px;
+          display: block;
+          position: absolute;
+          top: -8px;
+          right: 18px;
+          background: url(../images/spirit/icon.png);
+          background-position: -155px 0;
+          z-index: 1; }
+        .products-wrap #products .babycontent .right a {
+          display: block;
+          overflow: hidden; }
+        .products-wrap #products .babycontent .right img {
+          transition: 0.3s; }
+          .products-wrap #products .babycontent .right img:hover {
+            transform: scale(1.1, 1.1); }
+    .products-wrap #products .baby, .products-wrap #products .mother, .products-wrap #products .beauty, .products-wrap #products .perfume, .products-wrap #products .personal, .products-wrap #products .bag, .products-wrap #products .diamond, .products-wrap #products .food {
+      width: 100%;
+      height: 600px;
+      overflow: hidden; }
+
+/*-------------floors--------------*/
+#floors {
+  width: 40px;
+  height: 490px;
+  position: fixed;
+  top: 120px;
+  left: -50px;
+  opacity: 0;
+  z-index: 7;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  background: #fff; }
+  #floors ul {
+    width: 100%;
+    height: 100%; }
+    #floors ul li {
+      width: 30px;
+      height: 30px;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      font-size: 11px;
+      padding: 5px; }
+    #floors ul .hcurr {
+      color: #fff;
+      background: #ff442e; }
